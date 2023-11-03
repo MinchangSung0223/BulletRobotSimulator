@@ -25,9 +25,13 @@ private:
 	int actuated_joint_num;
 	int eef_num;
 	int line_id;
+	int draw_cnt =0 ;
 	JVec q;
 	JVec q_dot;
 	JVec q_ddot;
+	int draw_id_x;
+	int draw_id_y;
+	int draw_id_z;
 	vector<int> actuated_joint_id;
 	vector<string> actuated_joint_name;
    
@@ -43,7 +47,14 @@ public:
 	Vector3d get_eef_moments();
 	void apply_ext_forces(Vector3d forces);
 	void apply_ext_torques(Vector3d torques);
+	int get_robot_id(){
+		return this->robot_id;
+	};
+	int get_eef_num(){
+		return this->eef_num;
+	};
 	JVec calc_inverse_dynamics();
+	void draw_eef_T(float line_length,float line_width);
 	virtual ~Robot();
 
 };

@@ -62,6 +62,9 @@
 #include "Robot.h"
 #include "LR_Control.h"
 
+#include "spdlog/spdlog.h"
+#include "spdlog/sinks/basic_file_sink.h"
+
 #define NSEC_PER_SEC 			1000000000
 
 static int run = 1;

@@ -5,7 +5,7 @@ include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
 include(FindPkgConfig)
 include(modules/CMakeFunctions.cmake)
-
+set(BUILD_SHARED_LIBS FALSE)
 set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR})
 set(PROJ_INSTALL_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/bin/inc)
 set(PROJ_INSTALL_BIN_DIR ${PROJECT_SOURCE_DIR}/bin)
@@ -16,7 +16,11 @@ set(CMAKE_MODULE_PATH  ${CMAKE_CURRENT_SOURCE_DIR}/modules)
 set(BUILD_SHARED_LIBS TRUE)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
 
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release CACHE STRING "Choose the type of build, options are: Debug | Release | RelWithDebInfo | MinSizeRel" FORCE)
+endif()
 SET(RobotSimulator_NoGUI_SRCS
   src/main.cpp
 )

@@ -43,7 +43,7 @@ SET(BULLET_GUI_LIBS BulletRobotics BulletExampleBrowserLib BulletFileLoader Bull
 
 find_package(Eigen3 3.0 REQUIRED NO_MODULE)
 find_package(jsoncpp REQUIRED)
-add_library(${PROJECT_NAME} SHARED STATIC  ${SOURCE_FILES}  ${RobotSimulator_SRCS_GUI} )
+add_library(${PROJECT_NAME}  STATIC  ${SOURCE_FILES}  ${RobotSimulator_SRCS_GUI} )
 add_library(sub::SimRobot ALIAS ${PROJECT_NAME} )
 target_include_directories( ${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR})
 target_link_libraries(${PROJECT_NAME} PUBLIC Eigen3::Eigen jsoncpp ${BULLET_GUI_LIBS})

@@ -153,6 +153,28 @@ JVec Robot::calc_inverse_dynamics(){
         torques[i] = jointForcesOutput[i];
     return torques;
 }
+void Robot::draw_eef_T(float line_length,float line_width){
+	btVector3 fromXYZ(0,0,0);
+    b3RobotSimulatorAddUserDebugLineArgs line_args;
+    line_args.m_parentObjectUniqueId=this->get_robot_id();
+    line_args.m_parentLinkIndex=this->get_eef_num();
+    line_args.m_lifeTime = 0;
+    line_args.m_lineWidth = line_width;   
+
+	line_args.m_colorRGB[0]=1;
+	line_args.m_colorRGB[1]=0;
+	line_args.m_colorRGB[2]=0;
+	this->draw_id_x=sim->addUserDebugLine(fromXYZ,btVector3(line_length,0,0),line_args);
+	line_args.m_colorRGB[0]=0;
+	line_args.m_colorRGB[1]=1;
+	line_args.m_colorRGB[2]=0;
+	this->draw_id_y=sim->addUserDebugLine(fromXYZ,btVector3(0,line_length,0),line_args);
+	line_args.m_colorRGB[0]=0;
+	line_args.m_colorRGB[1]=0;
+	line_args.m_colorRGB[2]=1;
+	this->draw_id_z=sim->addUserDebugLine(fromXYZ,btVector3(0,0,line_length),line_args);
+
+}
 // Destructor
 Robot::~Robot() {
     
