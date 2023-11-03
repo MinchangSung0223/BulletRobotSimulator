@@ -1,0 +1,112 @@
+{
+	"BUILD_DIR" : "/home/robot/robot_ws/BulletRobotSimulator/build/robotSim_autogen",
+	"CMAKE_BINARY_DIR" : "/home/robot/robot_ws/BulletRobotSimulator/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/robot/robot_ws/BulletRobotSimulator/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/robot/robot_ws/BulletRobotSimulator",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_SOURCE_DIR" : "/home/robot/robot_ws/BulletRobotSimulator",
+	"HEADERS" : 
+	[
+		[
+			"/home/robot/robot_ws/BulletRobotSimulator/src/main.h",
+			"MU",
+			"UVLADIE3JM/moc_main.cpp"
+		],
+		[
+			"/home/robot/robot_ws/BulletRobotSimulator/src/mainwindow.h",
+			"MU",
+			"UVLADIE3JM/moc_mainwindow.cpp"
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/robot/robot_ws/BulletRobotSimulator/build/robotSim_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/robot/robot_ws/BulletRobotSimulator/build/robotSim_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"BT_USE_DOUBLE_PRECISION",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
+		"QT_NO_DEBUG",
+		"QT_PRINTSUPPORT_LIB",
+		"QT_QML_LIB",
+		"QT_QUICK_LIB",
+		"QT_WIDGETS_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/robot/robot_ws/BulletRobotSimulator/build",
+		"/home/robot/robot_ws/BulletRobotSimulator",
+		"/home/robot/robot_ws/BulletRobotSimulator/bin/inc",
+		"/usr/src/linux-headers-5.4.239-xenomai-3.2.3+",
+		"/opt/bullet3/src",
+		"/opt/bullet3/examples",
+		"/opt/bullet3/examples/SharedMemory",
+		"/opt/bullet3/examples/RobotSimulator",
+		"/opt/bullet3/examples/ThirdPartyLibs",
+		"/opt/bullet3/examples/ThirdPartyLibs/enet/include",
+		"/opt/bullet3/examples/ThirdPartyLibs/clsocket/src",
+		"/home/robot/robot_ws/BulletRobotSimulator/include/SimRobot",
+		"/home/robot/robot_ws/BulletRobotSimulator/include/LieGroupRobotics",
+		"/home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets",
+		"/home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow",
+		"/usr/local/include/bullet",
+		"/home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/framelesswindow",
+		"/home/robot/robot_ws/BulletRobotSimulator/include/QCustomPlot_library/lib",
+		"/usr/include/eigen3",
+		"/usr/include/x86_64-linux-gnu/qt5",
+		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
+		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
+		"/usr/include/x86_64-linux-gnu/qt5/QtNetwork",
+		"/usr/include/x86_64-linux-gnu/qt5/QtQuick",
+		"/usr/include/x86_64-linux-gnu/qt5/QtQml",
+		"/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport",
+		"/usr/include/c++/9",
+		"/usr/include/x86_64-linux-gnu/c++/9",
+		"/usr/include/c++/9/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/9/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu",
+		"/usr/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : true,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/robot/robot_ws/BulletRobotSimulator/build/robotSim_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 24,
+	"PARSE_CACHE_FILE" : "/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles/robotSim_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
+	"QT_VERSION_MAJOR" : 5,
+	"SETTINGS_FILE" : "/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles/robotSim_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[ "/home/robot/robot_ws/BulletRobotSimulator/src/main.cpp", "MU" ],
+		[ "/home/robot/robot_ws/BulletRobotSimulator/src/mainwindow.cpp", "MU" ]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}
