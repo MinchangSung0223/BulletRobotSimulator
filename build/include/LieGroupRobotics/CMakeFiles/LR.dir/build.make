@@ -60,41 +60,41 @@ include include/LieGroupRobotics/CMakeFiles/LR.dir/flags.make
 include/LieGroupRobotics/CMakeFiles/LR.dir/LR_autogen/mocs_compilation.cpp.o: include/LieGroupRobotics/CMakeFiles/LR.dir/flags.make
 include/LieGroupRobotics/CMakeFiles/LR.dir/LR_autogen/mocs_compilation.cpp.o: include/LieGroupRobotics/LR_autogen/mocs_compilation.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object include/LieGroupRobotics/CMakeFiles/LR.dir/LR_autogen/mocs_compilation.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LR.dir/LR_autogen/mocs_compilation.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics/LR_autogen/mocs_compilation.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LR.dir/LR_autogen/mocs_compilation.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics/LR_autogen/mocs_compilation.cpp
 
 include/LieGroupRobotics/CMakeFiles/LR.dir/LR_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LR.dir/LR_autogen/mocs_compilation.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics/LR_autogen/mocs_compilation.cpp > CMakeFiles/LR.dir/LR_autogen/mocs_compilation.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics/LR_autogen/mocs_compilation.cpp > CMakeFiles/LR.dir/LR_autogen/mocs_compilation.cpp.i
 
 include/LieGroupRobotics/CMakeFiles/LR.dir/LR_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LR.dir/LR_autogen/mocs_compilation.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics/LR_autogen/mocs_compilation.cpp -o CMakeFiles/LR.dir/LR_autogen/mocs_compilation.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics/LR_autogen/mocs_compilation.cpp -o CMakeFiles/LR.dir/LR_autogen/mocs_compilation.cpp.s
 
 include/LieGroupRobotics/CMakeFiles/LR.dir/LR_Control.cpp.o: include/LieGroupRobotics/CMakeFiles/LR.dir/flags.make
 include/LieGroupRobotics/CMakeFiles/LR.dir/LR_Control.cpp.o: ../include/LieGroupRobotics/LR_Control.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object include/LieGroupRobotics/CMakeFiles/LR.dir/LR_Control.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LR.dir/LR_Control.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/LieGroupRobotics/LR_Control.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LR.dir/LR_Control.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/LieGroupRobotics/LR_Control.cpp
 
 include/LieGroupRobotics/CMakeFiles/LR.dir/LR_Control.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LR.dir/LR_Control.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/LieGroupRobotics/LR_Control.cpp > CMakeFiles/LR.dir/LR_Control.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/LieGroupRobotics/LR_Control.cpp > CMakeFiles/LR.dir/LR_Control.cpp.i
 
 include/LieGroupRobotics/CMakeFiles/LR.dir/LR_Control.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LR.dir/LR_Control.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/LieGroupRobotics/LR_Control.cpp -o CMakeFiles/LR.dir/LR_Control.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/LieGroupRobotics/LR_Control.cpp -o CMakeFiles/LR.dir/LR_Control.cpp.s
 
 include/LieGroupRobotics/CMakeFiles/LR.dir/liegroup_robotics.cpp.o: include/LieGroupRobotics/CMakeFiles/LR.dir/flags.make
 include/LieGroupRobotics/CMakeFiles/LR.dir/liegroup_robotics.cpp.o: ../include/LieGroupRobotics/liegroup_robotics.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object include/LieGroupRobotics/CMakeFiles/LR.dir/liegroup_robotics.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LR.dir/liegroup_robotics.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/LieGroupRobotics/liegroup_robotics.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LR.dir/liegroup_robotics.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/LieGroupRobotics/liegroup_robotics.cpp
 
 include/LieGroupRobotics/CMakeFiles/LR.dir/liegroup_robotics.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LR.dir/liegroup_robotics.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/LieGroupRobotics/liegroup_robotics.cpp > CMakeFiles/LR.dir/liegroup_robotics.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/LieGroupRobotics/liegroup_robotics.cpp > CMakeFiles/LR.dir/liegroup_robotics.cpp.i
 
 include/LieGroupRobotics/CMakeFiles/LR.dir/liegroup_robotics.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LR.dir/liegroup_robotics.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/LieGroupRobotics/liegroup_robotics.cpp -o CMakeFiles/LR.dir/liegroup_robotics.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/LieGroupRobotics/liegroup_robotics.cpp -o CMakeFiles/LR.dir/liegroup_robotics.cpp.s
 
 # Object files for target LR
 LR_OBJECTS = \

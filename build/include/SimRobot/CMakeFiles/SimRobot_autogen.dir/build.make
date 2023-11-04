@@ -55,7 +55,7 @@ include include/SimRobot/CMakeFiles/SimRobot_autogen.dir/progress.make
 
 include/SimRobot/CMakeFiles/SimRobot_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target SimRobot"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/cmake -E cmake_autogen /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot/CMakeFiles/SimRobot_autogen.dir/AutogenInfo.json ""
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/cmake -E cmake_autogen /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot/CMakeFiles/SimRobot_autogen.dir/AutogenInfo.json Release
 
 SimRobot_autogen: include/SimRobot/CMakeFiles/SimRobot_autogen
 SimRobot_autogen: include/SimRobot/CMakeFiles/SimRobot_autogen.dir/build.make

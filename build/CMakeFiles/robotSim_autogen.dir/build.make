@@ -55,7 +55,7 @@ include CMakeFiles/robotSim_autogen.dir/progress.make
 
 CMakeFiles/robotSim_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target robotSim"
-	/usr/bin/cmake -E cmake_autogen /home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles/robotSim_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E cmake_autogen /home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles/robotSim_autogen.dir/AutogenInfo.json Release
 
 robotSim_autogen: CMakeFiles/robotSim_autogen
 robotSim_autogen: CMakeFiles/robotSim_autogen.dir/build.make

@@ -183,11 +183,31 @@ void LR_Control::WayPointJointTrajectory(std::vector<JVec> way_points, std::vect
     lr::JointTrajectory(  way_points.at(idx),   way_points.at(idx+1),  time_list.at(idx+1)-time_list.at(idx), now-time_list.at(idx)  , 0 , q_des, q_dot_des, q_ddot_des);
     
 }
-
-void LR_Control::LRSetup(){
+void concat(const char* s1, const char* s2, char* dest, size_t destSize) {
+    // destSize는 dest의 전체 크기를 나타냅니다.
+    // sprintf 대신에 snprintf를 사용하여 버퍼 오버플로우 방지
+    snprintf(dest, destSize, "%s%s", s1, s2);
+}
+void LR_Control::LRSetup(const char* urdf_path){
 	Json::Value rootr;
-	bool ret = ReadLRData("/opt/RobotInfo/LR_info.json",rootr);
-    if(ret!=0) cout<<"NO LR_info.json"<<endl;
+    const char* LR_path ="LR_info.json";
+    char* filepath = strdup(urdf_path);
+    char LR_full_path[100]; // 
+    if (filepath != NULL) {
+        char* lastSlash = strrchr(filepath, '/');
+        if (lastSlash) {
+            *(lastSlash + 1) = '\0'; //
+            concat(filepath, LR_path, LR_full_path, sizeof(LR_full_path));    
+        } else {
+            concat(filepath, LR_path, LR_full_path, sizeof(LR_full_path));    
+
+        }
+        free(filepath);
+    } else {
+        printf("ERROR.\n");
+    }
+	bool ret = ReadLRData(LR_full_path,rootr);
+
     ScrewList Blist,Slist;
 	for(int i =0;i<6 ; i++){
 		for(int j =0;j<JOINTNUM;j++){

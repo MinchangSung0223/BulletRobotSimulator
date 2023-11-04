@@ -60,41 +60,41 @@ include include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/f
 include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/framelesswindow_autogen/mocs_compilation.cpp.o: include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/flags.make
 include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/framelesswindow_autogen/mocs_compilation.cpp.o: include/DarkStyleWindow/framelesswindow/framelesswindow_autogen/mocs_compilation.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/framelesswindow_autogen/mocs_compilation.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/framelesswindow.dir/framelesswindow_autogen/mocs_compilation.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow/framelesswindow_autogen/mocs_compilation.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/framelesswindow.dir/framelesswindow_autogen/mocs_compilation.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow/framelesswindow_autogen/mocs_compilation.cpp
 
 include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/framelesswindow_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/framelesswindow.dir/framelesswindow_autogen/mocs_compilation.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow/framelesswindow_autogen/mocs_compilation.cpp > CMakeFiles/framelesswindow.dir/framelesswindow_autogen/mocs_compilation.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow/framelesswindow_autogen/mocs_compilation.cpp > CMakeFiles/framelesswindow.dir/framelesswindow_autogen/mocs_compilation.cpp.i
 
 include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/framelesswindow_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/framelesswindow.dir/framelesswindow_autogen/mocs_compilation.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow/framelesswindow_autogen/mocs_compilation.cpp -o CMakeFiles/framelesswindow.dir/framelesswindow_autogen/mocs_compilation.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow/framelesswindow_autogen/mocs_compilation.cpp -o CMakeFiles/framelesswindow.dir/framelesswindow_autogen/mocs_compilation.cpp.s
 
 include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/framelesswindow.cpp.o: include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/flags.make
 include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/framelesswindow.cpp.o: ../include/DarkStyleWindow/framelesswindow/framelesswindow.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/framelesswindow.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/framelesswindow.dir/framelesswindow.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/framelesswindow/framelesswindow.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/framelesswindow.dir/framelesswindow.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/framelesswindow/framelesswindow.cpp
 
 include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/framelesswindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/framelesswindow.dir/framelesswindow.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/framelesswindow/framelesswindow.cpp > CMakeFiles/framelesswindow.dir/framelesswindow.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/framelesswindow/framelesswindow.cpp > CMakeFiles/framelesswindow.dir/framelesswindow.cpp.i
 
 include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/framelesswindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/framelesswindow.dir/framelesswindow.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/framelesswindow/framelesswindow.cpp -o CMakeFiles/framelesswindow.dir/framelesswindow.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/framelesswindow/framelesswindow.cpp -o CMakeFiles/framelesswindow.dir/framelesswindow.cpp.s
 
 include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/windowdragger.cpp.o: include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/flags.make
 include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/windowdragger.cpp.o: ../include/DarkStyleWindow/framelesswindow/windowdragger.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/windowdragger.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/framelesswindow.dir/windowdragger.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/framelesswindow/windowdragger.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/framelesswindow.dir/windowdragger.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/framelesswindow/windowdragger.cpp
 
 include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/windowdragger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/framelesswindow.dir/windowdragger.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/framelesswindow/windowdragger.cpp > CMakeFiles/framelesswindow.dir/windowdragger.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/framelesswindow/windowdragger.cpp > CMakeFiles/framelesswindow.dir/windowdragger.cpp.i
 
 include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow.dir/windowdragger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/framelesswindow.dir/windowdragger.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/framelesswindow/windowdragger.cpp -o CMakeFiles/framelesswindow.dir/windowdragger.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/framelesswindow/windowdragger.cpp -o CMakeFiles/framelesswindow.dir/windowdragger.cpp.s
 
 # Object files for target framelesswindow
 framelesswindow_OBJECTS = \

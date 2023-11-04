@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "../../../output/amd64/lib/libqcustomplot.pdb"
-  "../../../output/amd64/lib/libqcustomplot.so"
-  "../../../output/amd64/lib/libqcustomplot.so.2"
-  "../../../output/amd64/lib/libqcustomplot.so.2.1.1.1"
+  "../../../output/amd64/Release/lib/libqcustomplot.pdb"
+  "../../../output/amd64/Release/lib/libqcustomplot.so"
+  "../../../output/amd64/Release/lib/libqcustomplot.so.2"
+  "../../../output/amd64/Release/lib/libqcustomplot.so.2.1.1.1"
   "CMakeFiles/qcustomplot_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/qcustomplot_autogen.dir/ParseCache.txt"
   "qcustomplot_autogen"

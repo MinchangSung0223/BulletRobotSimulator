@@ -55,7 +55,7 @@ include include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow_autog
 
 include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target framelesswindow"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/cmake -E cmake_autogen /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow_autogen.dir/AutogenInfo.json ""
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow && /usr/bin/cmake -E cmake_autogen /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow_autogen.dir/AutogenInfo.json Release
 
 framelesswindow_autogen: include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow_autogen
 framelesswindow_autogen: include/DarkStyleWindow/framelesswindow/CMakeFiles/framelesswindow_autogen.dir/build.make

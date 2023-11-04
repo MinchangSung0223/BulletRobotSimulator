@@ -60,145 +60,145 @@ include include/QtWidgets/CMakeFiles/QtWidgets.dir/flags.make
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtWidgets_autogen/mocs_compilation.cpp.o: include/QtWidgets/CMakeFiles/QtWidgets.dir/flags.make
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtWidgets_autogen/mocs_compilation.cpp.o: include/QtWidgets/QtWidgets_autogen/mocs_compilation.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object include/QtWidgets/CMakeFiles/QtWidgets.dir/QtWidgets_autogen/mocs_compilation.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtWidgets_autogen/mocs_compilation.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets/QtWidgets_autogen/mocs_compilation.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtWidgets_autogen/mocs_compilation.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets/QtWidgets_autogen/mocs_compilation.cpp
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtWidgets_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtWidgets.dir/QtWidgets_autogen/mocs_compilation.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets/QtWidgets_autogen/mocs_compilation.cpp > CMakeFiles/QtWidgets.dir/QtWidgets_autogen/mocs_compilation.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets/QtWidgets_autogen/mocs_compilation.cpp > CMakeFiles/QtWidgets.dir/QtWidgets_autogen/mocs_compilation.cpp.i
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtWidgets_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtWidgets.dir/QtWidgets_autogen/mocs_compilation.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets/QtWidgets_autogen/mocs_compilation.cpp -o CMakeFiles/QtWidgets.dir/QtWidgets_autogen/mocs_compilation.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets/QtWidgets_autogen/mocs_compilation.cpp -o CMakeFiles/QtWidgets.dir/QtWidgets_autogen/mocs_compilation.cpp.s
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtAbstractMeter.cpp.o: include/QtWidgets/CMakeFiles/QtWidgets.dir/flags.make
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtAbstractMeter.cpp.o: ../include/QtWidgets/QtAbstractMeter.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object include/QtWidgets/CMakeFiles/QtWidgets.dir/QtAbstractMeter.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtAbstractMeter.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtAbstractMeter.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtAbstractMeter.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtAbstractMeter.cpp
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtAbstractMeter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtWidgets.dir/QtAbstractMeter.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtAbstractMeter.cpp > CMakeFiles/QtWidgets.dir/QtAbstractMeter.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtAbstractMeter.cpp > CMakeFiles/QtWidgets.dir/QtAbstractMeter.cpp.i
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtAbstractMeter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtWidgets.dir/QtAbstractMeter.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtAbstractMeter.cpp -o CMakeFiles/QtWidgets.dir/QtAbstractMeter.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtAbstractMeter.cpp -o CMakeFiles/QtWidgets.dir/QtAbstractMeter.cpp.s
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtButtonLedIndicator.cpp.o: include/QtWidgets/CMakeFiles/QtWidgets.dir/flags.make
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtButtonLedIndicator.cpp.o: ../include/QtWidgets/QtButtonLedIndicator.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object include/QtWidgets/CMakeFiles/QtWidgets.dir/QtButtonLedIndicator.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtButtonLedIndicator.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonLedIndicator.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtButtonLedIndicator.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonLedIndicator.cpp
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtButtonLedIndicator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtWidgets.dir/QtButtonLedIndicator.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonLedIndicator.cpp > CMakeFiles/QtWidgets.dir/QtButtonLedIndicator.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonLedIndicator.cpp > CMakeFiles/QtWidgets.dir/QtButtonLedIndicator.cpp.i
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtButtonLedIndicator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtWidgets.dir/QtButtonLedIndicator.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonLedIndicator.cpp -o CMakeFiles/QtWidgets.dir/QtButtonLedIndicator.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonLedIndicator.cpp -o CMakeFiles/QtWidgets.dir/QtButtonLedIndicator.cpp.s
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtButtonSlide.cpp.o: include/QtWidgets/CMakeFiles/QtWidgets.dir/flags.make
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtButtonSlide.cpp.o: ../include/QtWidgets/QtButtonSlide.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object include/QtWidgets/CMakeFiles/QtWidgets.dir/QtButtonSlide.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtButtonSlide.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonSlide.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtButtonSlide.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonSlide.cpp
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtButtonSlide.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtWidgets.dir/QtButtonSlide.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonSlide.cpp > CMakeFiles/QtWidgets.dir/QtButtonSlide.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonSlide.cpp > CMakeFiles/QtWidgets.dir/QtButtonSlide.cpp.i
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtButtonSlide.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtWidgets.dir/QtButtonSlide.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonSlide.cpp -o CMakeFiles/QtWidgets.dir/QtButtonSlide.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonSlide.cpp -o CMakeFiles/QtWidgets.dir/QtButtonSlide.cpp.s
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtButtonSwitch.cpp.o: include/QtWidgets/CMakeFiles/QtWidgets.dir/flags.make
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtButtonSwitch.cpp.o: ../include/QtWidgets/QtButtonSwitch.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object include/QtWidgets/CMakeFiles/QtWidgets.dir/QtButtonSwitch.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtButtonSwitch.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonSwitch.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtButtonSwitch.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonSwitch.cpp
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtButtonSwitch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtWidgets.dir/QtButtonSwitch.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonSwitch.cpp > CMakeFiles/QtWidgets.dir/QtButtonSwitch.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonSwitch.cpp > CMakeFiles/QtWidgets.dir/QtButtonSwitch.cpp.i
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtButtonSwitch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtWidgets.dir/QtButtonSwitch.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonSwitch.cpp -o CMakeFiles/QtWidgets.dir/QtButtonSwitch.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtButtonSwitch.cpp -o CMakeFiles/QtWidgets.dir/QtButtonSwitch.cpp.s
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtFunctions.cpp.o: include/QtWidgets/CMakeFiles/QtWidgets.dir/flags.make
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtFunctions.cpp.o: ../include/QtWidgets/QtFunctions.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object include/QtWidgets/CMakeFiles/QtWidgets.dir/QtFunctions.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtFunctions.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtFunctions.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtFunctions.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtFunctions.cpp
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtFunctions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtWidgets.dir/QtFunctions.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtFunctions.cpp > CMakeFiles/QtWidgets.dir/QtFunctions.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtFunctions.cpp > CMakeFiles/QtWidgets.dir/QtFunctions.cpp.i
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtFunctions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtWidgets.dir/QtFunctions.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtFunctions.cpp -o CMakeFiles/QtWidgets.dir/QtFunctions.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtFunctions.cpp -o CMakeFiles/QtWidgets.dir/QtFunctions.cpp.s
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtGaugeWidget.cpp.o: include/QtWidgets/CMakeFiles/QtWidgets.dir/flags.make
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtGaugeWidget.cpp.o: ../include/QtWidgets/QtGaugeWidget.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object include/QtWidgets/CMakeFiles/QtWidgets.dir/QtGaugeWidget.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtGaugeWidget.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtGaugeWidget.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtGaugeWidget.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtGaugeWidget.cpp
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtGaugeWidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtWidgets.dir/QtGaugeWidget.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtGaugeWidget.cpp > CMakeFiles/QtWidgets.dir/QtGaugeWidget.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtGaugeWidget.cpp > CMakeFiles/QtWidgets.dir/QtGaugeWidget.cpp.i
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtGaugeWidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtWidgets.dir/QtGaugeWidget.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtGaugeWidget.cpp -o CMakeFiles/QtWidgets.dir/QtGaugeWidget.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtGaugeWidget.cpp -o CMakeFiles/QtWidgets.dir/QtGaugeWidget.cpp.s
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtProgressBarRound.cpp.o: include/QtWidgets/CMakeFiles/QtWidgets.dir/flags.make
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtProgressBarRound.cpp.o: ../include/QtWidgets/QtProgressBarRound.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object include/QtWidgets/CMakeFiles/QtWidgets.dir/QtProgressBarRound.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtProgressBarRound.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtProgressBarRound.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtProgressBarRound.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtProgressBarRound.cpp
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtProgressBarRound.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtWidgets.dir/QtProgressBarRound.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtProgressBarRound.cpp > CMakeFiles/QtWidgets.dir/QtProgressBarRound.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtProgressBarRound.cpp > CMakeFiles/QtWidgets.dir/QtProgressBarRound.cpp.i
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtProgressBarRound.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtWidgets.dir/QtProgressBarRound.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtProgressBarRound.cpp -o CMakeFiles/QtWidgets.dir/QtProgressBarRound.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtProgressBarRound.cpp -o CMakeFiles/QtWidgets.dir/QtProgressBarRound.cpp.s
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtScale.cpp.o: include/QtWidgets/CMakeFiles/QtWidgets.dir/flags.make
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtScale.cpp.o: ../include/QtWidgets/QtScale.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object include/QtWidgets/CMakeFiles/QtWidgets.dir/QtScale.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtScale.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtScale.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtScale.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtScale.cpp
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtScale.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtWidgets.dir/QtScale.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtScale.cpp > CMakeFiles/QtWidgets.dir/QtScale.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtScale.cpp > CMakeFiles/QtWidgets.dir/QtScale.cpp.i
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtScale.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtWidgets.dir/QtScale.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtScale.cpp -o CMakeFiles/QtWidgets.dir/QtScale.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtScale.cpp -o CMakeFiles/QtWidgets.dir/QtScale.cpp.s
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtThermoMeter.cpp.o: include/QtWidgets/CMakeFiles/QtWidgets.dir/flags.make
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtThermoMeter.cpp.o: ../include/QtWidgets/QtThermoMeter.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object include/QtWidgets/CMakeFiles/QtWidgets.dir/QtThermoMeter.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtThermoMeter.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtThermoMeter.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtThermoMeter.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtThermoMeter.cpp
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtThermoMeter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtWidgets.dir/QtThermoMeter.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtThermoMeter.cpp > CMakeFiles/QtWidgets.dir/QtThermoMeter.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtThermoMeter.cpp > CMakeFiles/QtWidgets.dir/QtThermoMeter.cpp.i
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtThermoMeter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtWidgets.dir/QtThermoMeter.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtThermoMeter.cpp -o CMakeFiles/QtWidgets.dir/QtThermoMeter.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtThermoMeter.cpp -o CMakeFiles/QtWidgets.dir/QtThermoMeter.cpp.s
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtWidgetWithBackground.cpp.o: include/QtWidgets/CMakeFiles/QtWidgets.dir/flags.make
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtWidgetWithBackground.cpp.o: ../include/QtWidgets/QtWidgetWithBackground.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object include/QtWidgets/CMakeFiles/QtWidgets.dir/QtWidgetWithBackground.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtWidgetWithBackground.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtWidgetWithBackground.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QtWidgets.dir/QtWidgetWithBackground.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtWidgetWithBackground.cpp
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtWidgetWithBackground.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtWidgets.dir/QtWidgetWithBackground.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtWidgetWithBackground.cpp > CMakeFiles/QtWidgets.dir/QtWidgetWithBackground.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtWidgetWithBackground.cpp > CMakeFiles/QtWidgets.dir/QtWidgetWithBackground.cpp.i
 
 include/QtWidgets/CMakeFiles/QtWidgets.dir/QtWidgetWithBackground.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtWidgets.dir/QtWidgetWithBackground.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtWidgetWithBackground.cpp -o CMakeFiles/QtWidgets.dir/QtWidgetWithBackground.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QtWidgets && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QtWidgets/QtWidgetWithBackground.cpp -o CMakeFiles/QtWidgets.dir/QtWidgetWithBackground.cpp.s
 
 # Object files for target QtWidgets
 QtWidgets_OBJECTS = \

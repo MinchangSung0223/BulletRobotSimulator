@@ -60,41 +60,41 @@ include CMakeFiles/robotSim.dir/flags.make
 CMakeFiles/robotSim.dir/robotSim_autogen/mocs_compilation.cpp.o: CMakeFiles/robotSim.dir/flags.make
 CMakeFiles/robotSim.dir/robotSim_autogen/mocs_compilation.cpp.o: robotSim_autogen/mocs_compilation.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/robotSim.dir/robotSim_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robotSim.dir/robotSim_autogen/mocs_compilation.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/build/robotSim_autogen/mocs_compilation.cpp
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robotSim.dir/robotSim_autogen/mocs_compilation.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/build/robotSim_autogen/mocs_compilation.cpp
 
 CMakeFiles/robotSim.dir/robotSim_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotSim.dir/robotSim_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/build/robotSim_autogen/mocs_compilation.cpp > CMakeFiles/robotSim.dir/robotSim_autogen/mocs_compilation.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/build/robotSim_autogen/mocs_compilation.cpp > CMakeFiles/robotSim.dir/robotSim_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/robotSim.dir/robotSim_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotSim.dir/robotSim_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/build/robotSim_autogen/mocs_compilation.cpp -o CMakeFiles/robotSim.dir/robotSim_autogen/mocs_compilation.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/build/robotSim_autogen/mocs_compilation.cpp -o CMakeFiles/robotSim.dir/robotSim_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/robotSim.dir/src/main.cpp.o: CMakeFiles/robotSim.dir/flags.make
 CMakeFiles/robotSim.dir/src/main.cpp.o: ../src/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/robotSim.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robotSim.dir/src/main.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/src/main.cpp
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robotSim.dir/src/main.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/src/main.cpp
 
 CMakeFiles/robotSim.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotSim.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/src/main.cpp > CMakeFiles/robotSim.dir/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/src/main.cpp > CMakeFiles/robotSim.dir/src/main.cpp.i
 
 CMakeFiles/robotSim.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotSim.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/src/main.cpp -o CMakeFiles/robotSim.dir/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/src/main.cpp -o CMakeFiles/robotSim.dir/src/main.cpp.s
 
 CMakeFiles/robotSim.dir/src/mainwindow.cpp.o: CMakeFiles/robotSim.dir/flags.make
 CMakeFiles/robotSim.dir/src/mainwindow.cpp.o: ../src/mainwindow.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/robotSim.dir/src/mainwindow.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robotSim.dir/src/mainwindow.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/src/mainwindow.cpp
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robotSim.dir/src/mainwindow.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/src/mainwindow.cpp
 
 CMakeFiles/robotSim.dir/src/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotSim.dir/src/mainwindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/src/mainwindow.cpp > CMakeFiles/robotSim.dir/src/mainwindow.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/src/mainwindow.cpp > CMakeFiles/robotSim.dir/src/mainwindow.cpp.i
 
 CMakeFiles/robotSim.dir/src/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotSim.dir/src/mainwindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/src/mainwindow.cpp -o CMakeFiles/robotSim.dir/src/mainwindow.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/src/mainwindow.cpp -o CMakeFiles/robotSim.dir/src/mainwindow.cpp.s
 
 # Object files for target robotSim
 robotSim_OBJECTS = \
@@ -113,7 +113,7 @@ robotSim: include/SimRobot/libSimRobot.a
 robotSim: include/LieGroupRobotics/libLR.a
 robotSim: include/QtWidgets/libQtWidgets.a
 robotSim: include/DarkStyleWindow/libDarkStyleWindow.a
-robotSim: output/amd64/lib/libqcustomplot.so.2.1.1.1
+robotSim: output/amd64/Release/lib/libqcustomplot.so.2.1.1.1
 robotSim: /usr/local/lib/libBulletDynamics.so
 robotSim: /usr/local/lib/libBulletInverseDynamics.so
 robotSim: /usr/local/lib/libBulletInverseDynamicsUtils.so

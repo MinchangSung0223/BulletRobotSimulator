@@ -1,0 +1,410 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						8
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						12,
+						13
+					]
+				},
+				{
+					"build" : "include/SimRobot",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "include/SimRobot",
+					"targetIndexes" : 
+					[
+						6,
+						7
+					]
+				},
+				{
+					"build" : "include/LieGroupRobotics",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "include/LieGroupRobotics",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				},
+				{
+					"build" : "include/QtWidgets",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "include/QtWidgets",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"build" : "include/DarkStyleWindow",
+					"childIndexes" : 
+					[
+						5,
+						6,
+						7
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "include/DarkStyleWindow",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "include/DarkStyleWindow/darkstyle",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 5,
+					"source" : "include/DarkStyleWindow/darkstyle"
+				},
+				{
+					"build" : "include/DarkStyleWindow/framelesswindow",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 6,
+					"source" : "include/DarkStyleWindow/framelesswindow",
+					"targetIndexes" : 
+					[
+						8,
+						9
+					]
+				},
+				{
+					"build" : "include/DarkStyleWindow/images",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 7,
+					"source" : "include/DarkStyleWindow/images"
+				},
+				{
+					"build" : "include/QCustomPlot_library",
+					"childIndexes" : 
+					[
+						9
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 8,
+					"source" : "include/QCustomPlot_library"
+				},
+				{
+					"build" : "include/QCustomPlot_library/lib",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 9,
+					"source" : "include/QCustomPlot_library/lib",
+					"targetIndexes" : 
+					[
+						10,
+						11
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						8
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "robotSim",
+					"targetIndexes" : 
+					[
+						12,
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "SimRobot",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						6,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "LR",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "QtWidgets",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						5,
+						6,
+						7
+					],
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "DarkStyleWindow",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "darkstyle",
+					"parentIndex" : 4
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "framelesswindow",
+					"parentIndex" : 4,
+					"targetIndexes" : 
+					[
+						8,
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "images",
+					"parentIndex" : 4
+				},
+				{
+					"childIndexes" : 
+					[
+						9
+					],
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "qcustomplotroot",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						9
+					],
+					"name" : "qcustomplot",
+					"parentIndex" : 8,
+					"targetIndexes" : 
+					[
+						10,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "DarkStyleWindow::@f0091f1f28e587374ecd",
+					"jsonFile" : "target-DarkStyleWindow-Release-017694d91f654c4206ab.json",
+					"name" : "DarkStyleWindow",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "DarkStyleWindow_autogen::@f0091f1f28e587374ecd",
+					"jsonFile" : "target-DarkStyleWindow_autogen-Release-8e1c607aacd0db94d970.json",
+					"name" : "DarkStyleWindow_autogen",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "LR::@b7b40b9a27e15b02d6ea",
+					"jsonFile" : "target-LR-Release-e84fed35a9adae5dd7b4.json",
+					"name" : "LR",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "LR_autogen::@b7b40b9a27e15b02d6ea",
+					"jsonFile" : "target-LR_autogen-Release-9fba8a41c3378e4c956e.json",
+					"name" : "LR_autogen",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "QtWidgets::@f3637580905fab2528a1",
+					"jsonFile" : "target-QtWidgets-Release-16ef5abb3b8fe8124102.json",
+					"name" : "QtWidgets",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "QtWidgets_autogen::@f3637580905fab2528a1",
+					"jsonFile" : "target-QtWidgets_autogen-Release-f779e76b760b93194320.json",
+					"name" : "QtWidgets_autogen",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SimRobot::@63fbfa7b50a975af8809",
+					"jsonFile" : "target-SimRobot-Release-0b4197622362a58ad503.json",
+					"name" : "SimRobot",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SimRobot_autogen::@63fbfa7b50a975af8809",
+					"jsonFile" : "target-SimRobot_autogen-Release-4b3a3ef12d7f7840822a.json",
+					"name" : "SimRobot_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "framelesswindow::@0853fdb130f0c777b8f5",
+					"jsonFile" : "target-framelesswindow-Release-6ede36779a8632c07499.json",
+					"name" : "framelesswindow",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "framelesswindow_autogen::@0853fdb130f0c777b8f5",
+					"jsonFile" : "target-framelesswindow_autogen-Release-eac657605f57bfc113e3.json",
+					"name" : "framelesswindow_autogen",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "qcustomplot::@92319a7491d4223f4488",
+					"jsonFile" : "target-qcustomplot-Release-0541f5b57b4b2e17a81f.json",
+					"name" : "qcustomplot",
+					"projectIndex" : 9
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "qcustomplot_autogen::@92319a7491d4223f4488",
+					"jsonFile" : "target-qcustomplot_autogen-Release-ca3b4240755648d644b4.json",
+					"name" : "qcustomplot_autogen",
+					"projectIndex" : 9
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotSim::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotSim-Release-b90e50d79f6af86eaed6.json",
+					"name" : "robotSim",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotSim_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotSim_autogen-Release-5e2f73a55e288e4606f5.json",
+					"name" : "robotSim_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/robot/robot_ws/BulletRobotSimulator/build",
+		"source" : "/home/robot/robot_ws/BulletRobotSimulator"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

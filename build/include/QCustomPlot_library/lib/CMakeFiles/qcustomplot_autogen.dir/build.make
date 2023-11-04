@@ -55,7 +55,7 @@ include include/QCustomPlot_library/lib/CMakeFiles/qcustomplot_autogen.dir/progr
 
 include/QCustomPlot_library/lib/CMakeFiles/qcustomplot_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target qcustomplot"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib && /usr/bin/cmake -E cmake_autogen /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib/CMakeFiles/qcustomplot_autogen.dir/AutogenInfo.json ""
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib && /usr/bin/cmake -E cmake_autogen /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib/CMakeFiles/qcustomplot_autogen.dir/AutogenInfo.json Release
 
 qcustomplot_autogen: include/QCustomPlot_library/lib/CMakeFiles/qcustomplot_autogen
 qcustomplot_autogen: include/QCustomPlot_library/lib/CMakeFiles/qcustomplot_autogen.dir/build.make

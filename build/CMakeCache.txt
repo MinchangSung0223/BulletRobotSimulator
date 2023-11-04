@@ -65,15 +65,14 @@ CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
-//Choose the type of build, options are: None Debug Release RelWithDebInfo
-// MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=
+//No help, variable specified on the command line.
+CMAKE_BUILD_TYPE:STRING=Release
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -98,8 +97,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//C compiler
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
+//No help, variable specified on the command line.
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -142,8 +141,8 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//Enable/Disable output of compile commands during generation.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
+//No help, variable specified on the command line.
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
 
 //User executables (bin)
 CMAKE_INSTALL_BINDIR:PATH=bin
@@ -332,15 +331,6 @@ Eigen3_DIR:PATH=/usr/lib/cmake/eigen3
 //Number of joints
 JOINTNUM:STRING=7
 
-//Path to a file.
-KERNELHEADERS_DIR:PATH=/usr/src/linux-headers-5.4.239-xenomai-3.2.3+
-
-//Set to 1 if kernel headers were found
-KERNELHEADERS_FOUND:STRING=1
-
-//Kernel headers include dirs
-KERNELHEADERS_INCLUDE_DIRS:PATH=/usr/src/linux-headers-5.4.239-xenomai-3.2.3+/include;/usr/src/linux-headers-5.4.239-xenomai-3.2.3+/arch/x86/include
-
 //Value Computed by CMake
 LR_BINARY_DIR:STATIC=/home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics
 
@@ -397,244 +387,6 @@ SimRobot_LIB_DEPENDS:STATIC=general;jsoncpp;general;BulletRobotics;general;Bulle
 
 //Value Computed by CMake
 SimRobot_SOURCE_DIR:STATIC=/home/robot/robot_ws/BulletRobotSimulator/include/SimRobot
-
-//Xenomai base directory location (optional, used for nonstandard
-// installation paths)
-XENOMAI_ROOT_DIR:PATH=/usr/xenomai
-
-//Xenomai ALCHEMY skin definitions
-Xenomai_ALCHEMY_DEFINITIONS:STRING=-D_GNU_SOURCE -D_REENTRANT -fasynchronous-unwind-tables -D__COBALT__
-
-//Xenomai ALCHEMY Direct linker flags
-Xenomai_ALCHEMY_DL_FLAGS:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers -lalchemy -lcopperplate /usr/xenomai/lib/xenomai/bootstrap.o -Wl,--wrap=main -Wl,--dynamic-list=/usr/xenomai/lib/dynlist.ld -L/usr/xenomai/lib -lcobalt -lmodechk -lpthread -lrt
-
-//Xenomai ALCHEMY Direct linker flags for libraries
-Xenomai_ALCHEMY_DL_FLAGS_LIBRARIES:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers -lalchemy -lcopperplate /usr/xenomai/lib/xenomai/bootstrap-pic.o  -L/usr/xenomai/lib -lcobalt -lmodechk -lpthread -lrt
-
-//Xenomai ALCHEMY Found
-Xenomai_ALCHEMY_FOUND:STRING=TRUE
-
-//Xenomai ALCHEMY include directories
-Xenomai_ALCHEMY_INCLUDE_DIRS:STRING=/usr/xenomai/include/cobalt;/usr/xenomai/include;/usr/xenomai/include/alchemy
-
-//Xenomai ALCHEMY ldflags
-Xenomai_ALCHEMY_LDFLAGS:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers /usr/xenomai/lib/xenomai/bootstrap.o -Wl,--wrap=main -Wl,--dynamic-list=/usr/xenomai/lib/dynlist.ld
-
-//Xenomai ALCHEMY ldflags for libraries
-Xenomai_ALCHEMY_LDFLAGS_LIBRARIES:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers /usr/xenomai/lib/xenomai/bootstrap-pic.o
-
-//Xenomai ALCHEMY libraries
-Xenomai_ALCHEMY_LIBRARIES:STRING=alchemy;copperplate;cobalt;modechk;pthread;rt
-
-//Xenomai ALCHEMY library directories
-Xenomai_ALCHEMY_LIBRARY_DIRS:STRING=-L/usr/xenomai/lib
-
-//Xenomai COBALT skin definitions
-Xenomai_COBALT_DEFINITIONS:STRING=-D_GNU_SOURCE -D_REENTRANT -fasynchronous-unwind-tables -D__COBALT__
-
-//Xenomai COBALT Direct linker flags
-Xenomai_COBALT_DL_FLAGS:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers  /usr/xenomai/lib/xenomai/bootstrap.o -Wl,--wrap=main -Wl,--dynamic-list=/usr/xenomai/lib/dynlist.ld -L/usr/xenomai/lib -lcobalt -lmodechk -lpthread -lrt
-
-//Xenomai COBALT Direct linker flags for libraries
-Xenomai_COBALT_DL_FLAGS_LIBRARIES:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers  /usr/xenomai/lib/xenomai/bootstrap-pic.o  -L/usr/xenomai/lib -lcobalt -lmodechk -lpthread -lrt
-
-//Xenomai COBALT Found
-Xenomai_COBALT_FOUND:STRING=TRUE
-
-//Xenomai COBALT include directories
-Xenomai_COBALT_INCLUDE_DIRS:STRING=/usr/xenomai/include/cobalt;/usr/xenomai/include
-
-//Xenomai COBALT ldflags
-Xenomai_COBALT_LDFLAGS:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers /usr/xenomai/lib/xenomai/bootstrap.o -Wl,--wrap=main -Wl,--dynamic-list=/usr/xenomai/lib/dynlist.ld
-
-//Xenomai COBALT ldflags for libraries
-Xenomai_COBALT_LDFLAGS_LIBRARIES:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers /usr/xenomai/lib/xenomai/bootstrap-pic.o
-
-//Xenomai COBALT libraries
-Xenomai_COBALT_LIBRARIES:STRING=cobalt;modechk;pthread;rt
-
-//Xenomai COBALT library directories
-Xenomai_COBALT_LIBRARY_DIRS:STRING=-L/usr/xenomai/lib
-
-//Xenomai Kernel Headers directory 
-Xenomai_KERNEL_INCLUDE_DIR:STRING=/usr/src/linux-headers-5.4.239-xenomai-3.2.3+/include/xenomai
-
-//Path to a library.
-Xenomai_LIBRARY_NATIVE:FILEPATH=Xenomai_LIBRARY_NATIVE-NOTFOUND
-
-//Path to a library.
-Xenomai_LIBRARY_PTHREAD_RT:FILEPATH=Xenomai_LIBRARY_PTHREAD_RT-NOTFOUND
-
-//Path to a library.
-Xenomai_LIBRARY_RTDM:FILEPATH=Xenomai_LIBRARY_RTDM-NOTFOUND
-
-//Path to a library.
-Xenomai_LIBRARY_XENOMAI:FILEPATH=Xenomai_LIBRARY_XENOMAI-NOTFOUND
-
-//Xenomai NATIVE skin definitions
-Xenomai_NATIVE_DEFINITIONS:STRING=-D__XENO_COMPAT__ -D_GNU_SOURCE -D_REENTRANT -fasynchronous-unwind-tables -D__COBALT__
-
-//Xenomai NATIVE Direct linker flags
-Xenomai_NATIVE_DL_FLAGS:STRING=-Wl,--no-as-needed -ltrank -Wl,@/usr/xenomai/lib/modechk.wrappers -lalchemy -lcopperplate /usr/xenomai/lib/xenomai/bootstrap.o -Wl,--wrap=main -Wl,--dynamic-list=/usr/xenomai/lib/dynlist.ld -L/usr/xenomai/lib -lcobalt -lmodechk -lpthread -lrt
-
-//Xenomai NATIVE Direct linker flags for libraries
-Xenomai_NATIVE_DL_FLAGS_LIBRARIES:STRING=-Wl,--no-as-needed -ltrank -Wl,@/usr/xenomai/lib/modechk.wrappers -lalchemy -lcopperplate /usr/xenomai/lib/xenomai/bootstrap-pic.o  -L/usr/xenomai/lib -lcobalt -lmodechk -lpthread -lrt
-
-//Xenomai NATIVE Found
-Xenomai_NATIVE_FOUND:STRING=TRUE
-
-//Xenomai NATIVE include directories
-Xenomai_NATIVE_INCLUDE_DIRS:STRING=/usr/xenomai/include/trank;/usr/xenomai/include/cobalt;/usr/xenomai/include;/usr/xenomai/include/alchemy
-
-//Xenomai NATIVE ldflags
-Xenomai_NATIVE_LDFLAGS:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers /usr/xenomai/lib/xenomai/bootstrap.o -Wl,--wrap=main -Wl,--dynamic-list=/usr/xenomai/lib/dynlist.ld
-
-//Xenomai NATIVE ldflags for libraries
-Xenomai_NATIVE_LDFLAGS_LIBRARIES:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers /usr/xenomai/lib/xenomai/bootstrap-pic.o
-
-//Xenomai NATIVE libraries
-Xenomai_NATIVE_LIBRARIES:STRING=trank;alchemy;copperplate;cobalt;modechk;pthread;rt
-
-//Xenomai NATIVE library directories
-Xenomai_NATIVE_LIBRARY_DIRS:STRING=-L/usr/xenomai/lib
-
-//Xenomai POSIX skin definitions
-Xenomai_POSIX_DEFINITIONS:STRING=-D_GNU_SOURCE -D_REENTRANT -fasynchronous-unwind-tables -D__COBALT__ -D__COBALT_WRAP__
-
-//Xenomai POSIX Direct linker flags
-Xenomai_POSIX_DL_FLAGS:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/cobalt.wrappers -Wl,@/usr/xenomai/lib/modechk.wrappers  /usr/xenomai/lib/xenomai/bootstrap.o -Wl,--wrap=main -Wl,--dynamic-list=/usr/xenomai/lib/dynlist.ld -L/usr/xenomai/lib -lcobalt -lmodechk -lpthread -lrt
-
-//Xenomai POSIX Direct linker flags for libraries
-Xenomai_POSIX_DL_FLAGS_LIBRARIES:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/cobalt.wrappers -Wl,@/usr/xenomai/lib/modechk.wrappers  /usr/xenomai/lib/xenomai/bootstrap-pic.o  -L/usr/xenomai/lib -lcobalt -lmodechk -lpthread -lrt
-
-//Xenomai POSIX Found
-Xenomai_POSIX_FOUND:STRING=TRUE
-
-//Xenomai POSIX include directories
-Xenomai_POSIX_INCLUDE_DIRS:STRING=/usr/xenomai/include/cobalt;/usr/xenomai/include
-
-//Xenomai POSIX ldflags
-Xenomai_POSIX_LDFLAGS:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/cobalt.wrappers -Wl,@/usr/xenomai/lib/modechk.wrappers /usr/xenomai/lib/xenomai/bootstrap.o -Wl,--wrap=main -Wl,--dynamic-list=/usr/xenomai/lib/dynlist.ld
-
-//Xenomai POSIX ldflags for libraries
-Xenomai_POSIX_LDFLAGS_LIBRARIES:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/cobalt.wrappers -Wl,@/usr/xenomai/lib/modechk.wrappers /usr/xenomai/lib/xenomai/bootstrap-pic.o
-
-//Xenomai POSIX libraries
-Xenomai_POSIX_LIBRARIES:STRING=cobalt;modechk;pthread;rt
-
-//Xenomai POSIX library directories
-Xenomai_POSIX_LIBRARY_DIRS:STRING=-L/usr/xenomai/lib
-
-//Xenomai PSOS skin definitions
-Xenomai_PSOS_DEFINITIONS:STRING=-D_GNU_SOURCE -D_REENTRANT -fasynchronous-unwind-tables -D__COBALT__
-
-//Xenomai PSOS Direct linker flags
-Xenomai_PSOS_DL_FLAGS:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers -lpsos -lcopperplate /usr/xenomai/lib/xenomai/bootstrap.o -Wl,--wrap=main -Wl,--dynamic-list=/usr/xenomai/lib/dynlist.ld -L/usr/xenomai/lib -lcobalt -lmodechk -lpthread -lrt
-
-//Xenomai PSOS Direct linker flags for libraries
-Xenomai_PSOS_DL_FLAGS_LIBRARIES:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers -lpsos -lcopperplate /usr/xenomai/lib/xenomai/bootstrap-pic.o  -L/usr/xenomai/lib -lcobalt -lmodechk -lpthread -lrt
-
-//Xenomai PSOS Found
-Xenomai_PSOS_FOUND:STRING=TRUE
-
-//Xenomai PSOS include directories
-Xenomai_PSOS_INCLUDE_DIRS:STRING=/usr/xenomai/include/cobalt;/usr/xenomai/include;/usr/xenomai/include/psos
-
-//Xenomai PSOS ldflags
-Xenomai_PSOS_LDFLAGS:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers /usr/xenomai/lib/xenomai/bootstrap.o -Wl,--wrap=main -Wl,--dynamic-list=/usr/xenomai/lib/dynlist.ld
-
-//Xenomai PSOS ldflags for libraries
-Xenomai_PSOS_LDFLAGS_LIBRARIES:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers /usr/xenomai/lib/xenomai/bootstrap-pic.o
-
-//Xenomai PSOS libraries
-Xenomai_PSOS_LIBRARIES:STRING=psos;copperplate;cobalt;modechk;pthread;rt
-
-//Xenomai PSOS library directories
-Xenomai_PSOS_LIBRARY_DIRS:STRING=-L/usr/xenomai/lib
-
-//Xenomai RTDM skin definitions
-Xenomai_RTDM_DEFINITIONS:STRING=-D_GNU_SOURCE -D_REENTRANT -fasynchronous-unwind-tables -D__COBALT__ -D__COBALT_WRAP__
-
-//Xenomai RTDM Direct linker flags
-Xenomai_RTDM_DL_FLAGS:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/cobalt.wrappers -Wl,@/usr/xenomai/lib/modechk.wrappers  /usr/xenomai/lib/xenomai/bootstrap.o -Wl,--wrap=main -Wl,--dynamic-list=/usr/xenomai/lib/dynlist.ld -L/usr/xenomai/lib -lcobalt -lmodechk -lpthread -lrt
-
-//Xenomai RTDM Direct linker flags for libraries
-Xenomai_RTDM_DL_FLAGS_LIBRARIES:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/cobalt.wrappers -Wl,@/usr/xenomai/lib/modechk.wrappers  /usr/xenomai/lib/xenomai/bootstrap-pic.o  -L/usr/xenomai/lib -lcobalt -lmodechk -lpthread -lrt
-
-//Xenomai RTDM Found
-Xenomai_RTDM_FOUND:STRING=TRUE
-
-//Xenomai RTDM include directories
-Xenomai_RTDM_INCLUDE_DIRS:STRING=/usr/xenomai/include/cobalt;/usr/xenomai/include
-
-//Xenomai RTDM ldflags
-Xenomai_RTDM_LDFLAGS:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/cobalt.wrappers -Wl,@/usr/xenomai/lib/modechk.wrappers /usr/xenomai/lib/xenomai/bootstrap.o -Wl,--wrap=main -Wl,--dynamic-list=/usr/xenomai/lib/dynlist.ld
-
-//Xenomai RTDM ldflags for libraries
-Xenomai_RTDM_LDFLAGS_LIBRARIES:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/cobalt.wrappers -Wl,@/usr/xenomai/lib/modechk.wrappers /usr/xenomai/lib/xenomai/bootstrap-pic.o
-
-//Xenomai RTDM libraries
-Xenomai_RTDM_LIBRARIES:STRING=cobalt;modechk;pthread;rt
-
-//Xenomai RTDM library directories
-Xenomai_RTDM_LIBRARY_DIRS:STRING=-L/usr/xenomai/lib
-
-//Xenomai SMOKEY skin definitions
-Xenomai_SMOKEY_DEFINITIONS:STRING=-D_GNU_SOURCE -D_REENTRANT -fasynchronous-unwind-tables -D__COBALT__
-
-//Xenomai SMOKEY Direct linker flags
-Xenomai_SMOKEY_DL_FLAGS:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers -lsmokey -lcopperplate /usr/xenomai/lib/xenomai/bootstrap.o -Wl,--wrap=main -Wl,--dynamic-list=/usr/xenomai/lib/dynlist.ld -L/usr/xenomai/lib -lcobalt -lmodechk -lpthread -lrt
-
-//Xenomai SMOKEY Direct linker flags for libraries
-Xenomai_SMOKEY_DL_FLAGS_LIBRARIES:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers -lsmokey -lcopperplate /usr/xenomai/lib/xenomai/bootstrap-pic.o  -L/usr/xenomai/lib -lcobalt -lmodechk -lpthread -lrt
-
-//Xenomai SMOKEY Found
-Xenomai_SMOKEY_FOUND:STRING=TRUE
-
-//Xenomai SMOKEY include directories
-Xenomai_SMOKEY_INCLUDE_DIRS:STRING=/usr/xenomai/include/cobalt;/usr/xenomai/include;/usr/xenomai/include/smokey
-
-//Xenomai SMOKEY ldflags
-Xenomai_SMOKEY_LDFLAGS:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers /usr/xenomai/lib/xenomai/bootstrap.o -Wl,--wrap=main -Wl,--dynamic-list=/usr/xenomai/lib/dynlist.ld
-
-//Xenomai SMOKEY ldflags for libraries
-Xenomai_SMOKEY_LDFLAGS_LIBRARIES:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers /usr/xenomai/lib/xenomai/bootstrap-pic.o
-
-//Xenomai SMOKEY libraries
-Xenomai_SMOKEY_LIBRARIES:STRING=smokey;copperplate;cobalt;modechk;pthread;rt
-
-//Xenomai SMOKEY library directories
-Xenomai_SMOKEY_LIBRARY_DIRS:STRING=-L/usr/xenomai/lib
-
-//Xenomai VXWORKS skin definitions
-Xenomai_VXWORKS_DEFINITIONS:STRING=-D_GNU_SOURCE -D_REENTRANT -fasynchronous-unwind-tables -D__COBALT__
-
-//Xenomai VXWORKS Direct linker flags
-Xenomai_VXWORKS_DL_FLAGS:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers -lvxworks -lcopperplate /usr/xenomai/lib/xenomai/bootstrap.o -Wl,--wrap=main -Wl,--dynamic-list=/usr/xenomai/lib/dynlist.ld -L/usr/xenomai/lib -lcobalt -lmodechk -lpthread -lrt
-
-//Xenomai VXWORKS Direct linker flags for libraries
-Xenomai_VXWORKS_DL_FLAGS_LIBRARIES:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers -lvxworks -lcopperplate /usr/xenomai/lib/xenomai/bootstrap-pic.o  -L/usr/xenomai/lib -lcobalt -lmodechk -lpthread -lrt
-
-//Xenomai VXWORKS Found
-Xenomai_VXWORKS_FOUND:STRING=TRUE
-
-//Xenomai VXWORKS include directories
-Xenomai_VXWORKS_INCLUDE_DIRS:STRING=/usr/xenomai/include/cobalt;/usr/xenomai/include;/usr/xenomai/include/vxworks
-
-//Xenomai VXWORKS ldflags
-Xenomai_VXWORKS_LDFLAGS:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers /usr/xenomai/lib/xenomai/bootstrap.o -Wl,--wrap=main -Wl,--dynamic-list=/usr/xenomai/lib/dynlist.ld
-
-//Xenomai VXWORKS ldflags for libraries
-Xenomai_VXWORKS_LDFLAGS_LIBRARIES:STRING=-Wl,--no-as-needed -Wl,@/usr/xenomai/lib/modechk.wrappers /usr/xenomai/lib/xenomai/bootstrap-pic.o
-
-//Xenomai VXWORKS libraries
-Xenomai_VXWORKS_LIBRARIES:STRING=vxworks;copperplate;cobalt;modechk;pthread;rt
-
-//Xenomai VXWORKS library directories
-Xenomai_VXWORKS_LIBRARY_DIRS:STRING=-L/usr/xenomai/lib
-
-//Path to a program.
-Xenomai_XENO_CONFIG:FILEPATH=/usr/xenomai/bin/xeno-config
 
 //Value Computed by CMake
 darkstyle_BINARY_DIR:STATIC=/home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/darkstyle
@@ -902,14 +654,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_Bullet:INTERNAL=[/usr/local/lib/libBulletDynamics.s
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.1()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
-//Details about finding Xenomai
-FIND_PACKAGE_MESSAGE_DETAILS_Xenomai:INTERNAL=[/usr/xenomai/include/trank;/usr/xenomai/include/cobalt;/usr/xenomai/include;/usr/xenomai/include/alchemy][trank;alchemy;copperplate;cobalt;modechk;pthread;rt][cfound components: NATIVE ][v3.2.3(3.1.1)]
-//ADVANCED property for variable: KERNELHEADERS_FOUND
-KERNELHEADERS_FOUND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: XENOMAI_ROOT_DIR
-XENOMAI_ROOT_DIR-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 

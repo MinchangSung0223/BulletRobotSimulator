@@ -6,6 +6,9 @@
 #include <vector>
 #pragma comment(lib, "jsoncpp.lib")
 #include <Eigen/Dense>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 using namespace Eigen;
 using namespace std;
 using namespace lr;
@@ -39,7 +42,7 @@ public:
     MatrixNd Hinf_Ki;
     MatrixNd Hinf_K_gamma;
 
-    void LRSetup();
+    void LRSetup(const char* urdf_path);
     JVec HinfControl( JVec q,JVec dq,JVec q_des,JVec dq_des,JVec ddq_des,JVec eint);
     void WayPointJointTrajectory(std::vector<JVec> way_points, std::vector<double> delays, double now, JVec& q_des,JVec& q_dot_des,JVec& q_ddot_des);
 };

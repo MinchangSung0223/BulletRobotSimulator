@@ -29,7 +29,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../"
   "robotSim_autogen/include"
   "../bin/inc"
-  "/usr/src/linux-headers-5.4.239-xenomai-3.2.3+"
   "/opt/bullet3/src"
   "/opt/bullet3/examples"
   "/opt/bullet3/examples/SharedMemory"

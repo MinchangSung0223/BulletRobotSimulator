@@ -55,7 +55,7 @@ include include/LieGroupRobotics/CMakeFiles/LR_autogen.dir/progress.make
 
 include/LieGroupRobotics/CMakeFiles/LR_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target LR"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/cmake -E cmake_autogen /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics/CMakeFiles/LR_autogen.dir/AutogenInfo.json ""
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics && /usr/bin/cmake -E cmake_autogen /home/robot/robot_ws/BulletRobotSimulator/build/include/LieGroupRobotics/CMakeFiles/LR_autogen.dir/AutogenInfo.json Release
 
 LR_autogen: include/LieGroupRobotics/CMakeFiles/LR_autogen
 LR_autogen: include/LieGroupRobotics/CMakeFiles/LR_autogen.dir/build.make

@@ -45,7 +45,6 @@
 		"/home/robot/robot_ws/BulletRobotSimulator/build",
 		"/home/robot/robot_ws/BulletRobotSimulator",
 		"/home/robot/robot_ws/BulletRobotSimulator/bin/inc",
-		"/usr/src/linux-headers-5.4.239-xenomai-3.2.3+",
 		"/opt/bullet3/src",
 		"/opt/bullet3/examples",
 		"/opt/bullet3/examples/SharedMemory",
@@ -83,7 +82,7 @@
 	"MOC_PATH_PREFIX" : true,
 	"MOC_PREDEFS_CMD" : 
 	[
-		"/usr/bin/c++",
+		"/usr/bin/g++",
 		"-dM",
 		"-E",
 		"-c",

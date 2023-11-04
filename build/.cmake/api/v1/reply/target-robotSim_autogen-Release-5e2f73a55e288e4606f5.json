@@ -1,0 +1,81 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "SimRobot::@63fbfa7b50a975af8809"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "LR::@b7b40b9a27e15b02d6ea"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QtWidgets::@f3637580905fab2528a1"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "DarkStyleWindow::@f0091f1f28e587374ecd"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "qcustomplot::@92319a7491d4223f4488"
+		}
+	],
+	"id" : "robotSim_autogen::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "robotSim_autogen",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/robotSim_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/robotSim_autogen.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

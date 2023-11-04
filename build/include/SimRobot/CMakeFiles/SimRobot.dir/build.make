@@ -60,145 +60,145 @@ include include/SimRobot/CMakeFiles/SimRobot.dir/flags.make
 include/SimRobot/CMakeFiles/SimRobot.dir/SimRobot_autogen/mocs_compilation.cpp.o: include/SimRobot/CMakeFiles/SimRobot.dir/flags.make
 include/SimRobot/CMakeFiles/SimRobot.dir/SimRobot_autogen/mocs_compilation.cpp.o: include/SimRobot/SimRobot_autogen/mocs_compilation.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object include/SimRobot/CMakeFiles/SimRobot.dir/SimRobot_autogen/mocs_compilation.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/SimRobot_autogen/mocs_compilation.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot/SimRobot_autogen/mocs_compilation.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/SimRobot_autogen/mocs_compilation.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot/SimRobot_autogen/mocs_compilation.cpp
 
 include/SimRobot/CMakeFiles/SimRobot.dir/SimRobot_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimRobot.dir/SimRobot_autogen/mocs_compilation.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot/SimRobot_autogen/mocs_compilation.cpp > CMakeFiles/SimRobot.dir/SimRobot_autogen/mocs_compilation.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot/SimRobot_autogen/mocs_compilation.cpp > CMakeFiles/SimRobot.dir/SimRobot_autogen/mocs_compilation.cpp.i
 
 include/SimRobot/CMakeFiles/SimRobot.dir/SimRobot_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimRobot.dir/SimRobot_autogen/mocs_compilation.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot/SimRobot_autogen/mocs_compilation.cpp -o CMakeFiles/SimRobot.dir/SimRobot_autogen/mocs_compilation.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot/SimRobot_autogen/mocs_compilation.cpp -o CMakeFiles/SimRobot.dir/SimRobot_autogen/mocs_compilation.cpp.s
 
 include/SimRobot/CMakeFiles/SimRobot.dir/Robot.cpp.o: include/SimRobot/CMakeFiles/SimRobot.dir/flags.make
 include/SimRobot/CMakeFiles/SimRobot.dir/Robot.cpp.o: ../include/SimRobot/Robot.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object include/SimRobot/CMakeFiles/SimRobot.dir/Robot.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/Robot.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/SimRobot/Robot.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/Robot.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/SimRobot/Robot.cpp
 
 include/SimRobot/CMakeFiles/SimRobot.dir/Robot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimRobot.dir/Robot.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/SimRobot/Robot.cpp > CMakeFiles/SimRobot.dir/Robot.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/SimRobot/Robot.cpp > CMakeFiles/SimRobot.dir/Robot.cpp.i
 
 include/SimRobot/CMakeFiles/SimRobot.dir/Robot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimRobot.dir/Robot.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/SimRobot/Robot.cpp -o CMakeFiles/SimRobot.dir/Robot.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/SimRobot/Robot.cpp -o CMakeFiles/SimRobot.dir/Robot.cpp.s
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp.o: include/SimRobot/CMakeFiles/SimRobot.dir/flags.make
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp.o: /opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp.o -c /opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp.o -c /opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp.i
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/b3RobotSimulatorClientAPI.cpp.s
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp.o: include/SimRobot/CMakeFiles/SimRobot.dir/flags.make
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp.o: /opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp.o -c /opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp.o -c /opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp.i
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/RobotSimulator/MinitaurSetup.cpp.s
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp.o: include/SimRobot/CMakeFiles/SimRobot.dir/flags.make
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp.o: /opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp.o -c /opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp.o -c /opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimRobot.dir/opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp.i
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimRobot.dir/opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/ExampleBrowser/InProcessExampleBrowser.cpp.s
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp.o: include/SimRobot/CMakeFiles/SimRobot.dir/flags.make
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp.o: /opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp.o -c /opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp.o -c /opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp.i
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsServerExample.cpp.s
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp.o: include/SimRobot/CMakeFiles/SimRobot.dir/flags.make
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp.o: /opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp.o -c /opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp.o -c /opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp.i
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/GraphicsClientExample.cpp.s
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp.o: include/SimRobot/CMakeFiles/SimRobot.dir/flags.make
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp.o: /opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp.o -c /opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp.o -c /opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp.i
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/RemoteGUIHelper.cpp.s
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp.o: include/SimRobot/CMakeFiles/SimRobot.dir/flags.make
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp.o: /opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp.o -c /opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp.o -c /opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp.i
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExample.cpp.s
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp.o: include/SimRobot/CMakeFiles/SimRobot.dir/flags.make
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp.o: /opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp.o -c /opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp.o -c /opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp.i
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/PhysicsServerExampleBullet2.cpp.s
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp.o: include/SimRobot/CMakeFiles/SimRobot.dir/flags.make
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp.o: /opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp.o -c /opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp.o -c /opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp > CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp.i
 
 include/SimRobot/CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/SimRobot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp -o CMakeFiles/SimRobot.dir/opt/bullet3/examples/SharedMemory/SharedMemoryInProcessPhysicsC_API.cpp.s
 
 # Object files for target SimRobot
 SimRobot_OBJECTS = \

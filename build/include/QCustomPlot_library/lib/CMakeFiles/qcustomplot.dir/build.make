@@ -60,28 +60,28 @@ include include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/flags.make
 include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/qcustomplot_autogen/mocs_compilation.cpp.o: include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/flags.make
 include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/qcustomplot_autogen/mocs_compilation.cpp.o: include/QCustomPlot_library/lib/qcustomplot_autogen/mocs_compilation.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/qcustomplot_autogen/mocs_compilation.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qcustomplot.dir/qcustomplot_autogen/mocs_compilation.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib/qcustomplot_autogen/mocs_compilation.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qcustomplot.dir/qcustomplot_autogen/mocs_compilation.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib/qcustomplot_autogen/mocs_compilation.cpp
 
 include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/qcustomplot_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qcustomplot.dir/qcustomplot_autogen/mocs_compilation.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib/qcustomplot_autogen/mocs_compilation.cpp > CMakeFiles/qcustomplot.dir/qcustomplot_autogen/mocs_compilation.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib/qcustomplot_autogen/mocs_compilation.cpp > CMakeFiles/qcustomplot.dir/qcustomplot_autogen/mocs_compilation.cpp.i
 
 include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/qcustomplot_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qcustomplot.dir/qcustomplot_autogen/mocs_compilation.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib/qcustomplot_autogen/mocs_compilation.cpp -o CMakeFiles/qcustomplot.dir/qcustomplot_autogen/mocs_compilation.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib/qcustomplot_autogen/mocs_compilation.cpp -o CMakeFiles/qcustomplot.dir/qcustomplot_autogen/mocs_compilation.cpp.s
 
 include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/qcustomplot.cpp.o: include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/flags.make
 include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/qcustomplot.cpp.o: ../include/QCustomPlot_library/lib/qcustomplot.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/qcustomplot.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qcustomplot.dir/qcustomplot.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QCustomPlot_library/lib/qcustomplot.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qcustomplot.dir/qcustomplot.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/QCustomPlot_library/lib/qcustomplot.cpp
 
 include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/qcustomplot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qcustomplot.dir/qcustomplot.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QCustomPlot_library/lib/qcustomplot.cpp > CMakeFiles/qcustomplot.dir/qcustomplot.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/QCustomPlot_library/lib/qcustomplot.cpp > CMakeFiles/qcustomplot.dir/qcustomplot.cpp.i
 
 include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/qcustomplot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qcustomplot.dir/qcustomplot.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QCustomPlot_library/lib/qcustomplot.cpp -o CMakeFiles/qcustomplot.dir/qcustomplot.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/QCustomPlot_library/lib/qcustomplot.cpp -o CMakeFiles/qcustomplot.dir/qcustomplot.cpp.s
 
 # Object files for target qcustomplot
 qcustomplot_OBJECTS = \
@@ -91,26 +91,26 @@ qcustomplot_OBJECTS = \
 # External object files for target qcustomplot
 qcustomplot_EXTERNAL_OBJECTS =
 
-output/amd64/lib/libqcustomplot.so.2.1.1.1: include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/qcustomplot_autogen/mocs_compilation.cpp.o
-output/amd64/lib/libqcustomplot.so.2.1.1.1: include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/qcustomplot.cpp.o
-output/amd64/lib/libqcustomplot.so.2.1.1.1: include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/build.make
-output/amd64/lib/libqcustomplot.so.2.1.1.1: /usr/lib/x86_64-linux-gnu/libQt5PrintSupport.so.5.12.8
-output/amd64/lib/libqcustomplot.so.2.1.1.1: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8
-output/amd64/lib/libqcustomplot.so.2.1.1.1: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8
-output/amd64/lib/libqcustomplot.so.2.1.1.1: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8
-output/amd64/lib/libqcustomplot.so.2.1.1.1: include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library ../../../output/amd64/lib/libqcustomplot.so"
+output/amd64/Release/lib/libqcustomplot.so.2.1.1.1: include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/qcustomplot_autogen/mocs_compilation.cpp.o
+output/amd64/Release/lib/libqcustomplot.so.2.1.1.1: include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/qcustomplot.cpp.o
+output/amd64/Release/lib/libqcustomplot.so.2.1.1.1: include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/build.make
+output/amd64/Release/lib/libqcustomplot.so.2.1.1.1: /usr/lib/x86_64-linux-gnu/libQt5PrintSupport.so.5.12.8
+output/amd64/Release/lib/libqcustomplot.so.2.1.1.1: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8
+output/amd64/Release/lib/libqcustomplot.so.2.1.1.1: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8
+output/amd64/Release/lib/libqcustomplot.so.2.1.1.1: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8
+output/amd64/Release/lib/libqcustomplot.so.2.1.1.1: include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library ../../../output/amd64/Release/lib/libqcustomplot.so"
 	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qcustomplot.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib && $(CMAKE_COMMAND) -E cmake_symlink_library ../../../output/amd64/lib/libqcustomplot.so.2.1.1.1 ../../../output/amd64/lib/libqcustomplot.so.2 ../../../output/amd64/lib/libqcustomplot.so
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/QCustomPlot_library/lib && $(CMAKE_COMMAND) -E cmake_symlink_library ../../../output/amd64/Release/lib/libqcustomplot.so.2.1.1.1 ../../../output/amd64/Release/lib/libqcustomplot.so.2 ../../../output/amd64/Release/lib/libqcustomplot.so
 
-output/amd64/lib/libqcustomplot.so.2: output/amd64/lib/libqcustomplot.so.2.1.1.1
-	@$(CMAKE_COMMAND) -E touch_nocreate output/amd64/lib/libqcustomplot.so.2
+output/amd64/Release/lib/libqcustomplot.so.2: output/amd64/Release/lib/libqcustomplot.so.2.1.1.1
+	@$(CMAKE_COMMAND) -E touch_nocreate output/amd64/Release/lib/libqcustomplot.so.2
 
-output/amd64/lib/libqcustomplot.so: output/amd64/lib/libqcustomplot.so.2.1.1.1
-	@$(CMAKE_COMMAND) -E touch_nocreate output/amd64/lib/libqcustomplot.so
+output/amd64/Release/lib/libqcustomplot.so: output/amd64/Release/lib/libqcustomplot.so.2.1.1.1
+	@$(CMAKE_COMMAND) -E touch_nocreate output/amd64/Release/lib/libqcustomplot.so
 
 # Rule to build all files generated by this target.
-include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/build: output/amd64/lib/libqcustomplot.so
+include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/build: output/amd64/Release/lib/libqcustomplot.so
 
 .PHONY : include/QCustomPlot_library/lib/CMakeFiles/qcustomplot.dir/build
 

@@ -127,13 +127,18 @@ void *physics_run(void *param) {
         //robot_info.act.q = JVec(sin(gt*M_PI*1),sin(gt*M_PI*2),sin(gt*M_PI*4),sin(gt*M_PI*8),sin(gt*M_PI*16),sin(gt*M_PI*32),sin(gt*M_PI*64)) ;
 //        spdlog::info("Torques: {}", torques.transpose().format(Eigen::IOFormat(Eigen::StreamPrecision, Eigen::DontAlignCols, ", ", ", ", "", "", "[", "]")));
         spdlog::info("{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f}",torques(0),torques(1),torques(2),torques(3),torques(4),torques(5),torques(6));
+                spdlog::info("{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f}",torques(0),torques(1),torques(2),torques(3),torques(4),torques(5),torques(6));
+
+
         static int cnt_=0;
         if(++cnt_>1000){
            nowClock = std::chrono::high_resolution_clock::now();
-            duration = std::chrono::duration_cast<std::chrono::microseconds>(nowClock-prevClock);            
+            duration = std::chrono::duration_cast<std::chrono::microseconds>(nowClock-prevClock);        
+
             //spdlog::info("gt : {:03.3f} , elapsed time : {:03.6f}[s] \n",gt,duration.count()/1e6);
 
-            //printf("gt : %.3f, elapsed time : %.6f [s] \n",gt,duration.count()/1e6);
+
+            printf("gt : %.3f, elapsed time : %.6f [s] \n",gt,duration.count()/1e6);
             //std::cout<<e.transpose()<<std::endl;
             cnt_ = 0;
             prevClock = nowClock;
@@ -174,15 +179,24 @@ int main(int argc, char* argv[]){
 	signal(SIGWINCH, signal_handler);
 	signal(SIGHUP, signal_handler);    
 
+    const char* urdfFilePath = NULL;
+    bool with_gui = false;
 
+    for (int i = 1; i < argc; ++i) {
+        if (strcmp(argv[i], "--gui") == 0) {
+            with_gui = true;
+        } else {
+            urdfFilePath = argv[i];  // 나머지 인자를 URDF 파일 경로로 간주합니다.
+        }
+    }
 
-
-    const char* urdfFilePath = "/opt/RobotInfo/urdf/satellite/arm.urdf";
-    bool with_gui=0;
     //-----------------Sim Setup------------------------
     sim = new b3RobotSimulatorClientAPI();
     bool isConnected;
-    isConnected = sim->connect(eCONNECT_GUI);
+    if(with_gui)
+        isConnected = sim->connect(eCONNECT_GUI);
+    else
+        isConnected = sim->connect(eCONNECT_DIRECT);
 
     if (!isConnected)
     {
@@ -202,7 +216,7 @@ int main(int argc, char* argv[]){
     robot = new Robot(sim,robotId);	
     robot_info.act.F_ext=Vector6d::Zero();
     control = new LR_Control();
-    control->LRSetup();
+    control->LRSetup(urdfFilePath);
 
     init_logger();  // 로거 초기화
 

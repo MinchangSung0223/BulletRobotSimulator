@@ -60,28 +60,28 @@ include include/DarkStyleWindow/CMakeFiles/DarkStyleWindow.dir/flags.make
 include/DarkStyleWindow/CMakeFiles/DarkStyleWindow.dir/DarkStyleWindow_autogen/mocs_compilation.cpp.o: include/DarkStyleWindow/CMakeFiles/DarkStyleWindow.dir/flags.make
 include/DarkStyleWindow/CMakeFiles/DarkStyleWindow.dir/DarkStyleWindow_autogen/mocs_compilation.cpp.o: include/DarkStyleWindow/DarkStyleWindow_autogen/mocs_compilation.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object include/DarkStyleWindow/CMakeFiles/DarkStyleWindow.dir/DarkStyleWindow_autogen/mocs_compilation.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DarkStyleWindow.dir/DarkStyleWindow_autogen/mocs_compilation.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/DarkStyleWindow_autogen/mocs_compilation.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DarkStyleWindow.dir/DarkStyleWindow_autogen/mocs_compilation.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/DarkStyleWindow_autogen/mocs_compilation.cpp
 
 include/DarkStyleWindow/CMakeFiles/DarkStyleWindow.dir/DarkStyleWindow_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DarkStyleWindow.dir/DarkStyleWindow_autogen/mocs_compilation.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/DarkStyleWindow_autogen/mocs_compilation.cpp > CMakeFiles/DarkStyleWindow.dir/DarkStyleWindow_autogen/mocs_compilation.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/DarkStyleWindow_autogen/mocs_compilation.cpp > CMakeFiles/DarkStyleWindow.dir/DarkStyleWindow_autogen/mocs_compilation.cpp.i
 
 include/DarkStyleWindow/CMakeFiles/DarkStyleWindow.dir/DarkStyleWindow_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DarkStyleWindow.dir/DarkStyleWindow_autogen/mocs_compilation.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/DarkStyleWindow_autogen/mocs_compilation.cpp -o CMakeFiles/DarkStyleWindow.dir/DarkStyleWindow_autogen/mocs_compilation.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow/DarkStyleWindow_autogen/mocs_compilation.cpp -o CMakeFiles/DarkStyleWindow.dir/DarkStyleWindow_autogen/mocs_compilation.cpp.s
 
 include/DarkStyleWindow/CMakeFiles/DarkStyleWindow.dir/DarkStyle.cpp.o: include/DarkStyleWindow/CMakeFiles/DarkStyleWindow.dir/flags.make
 include/DarkStyleWindow/CMakeFiles/DarkStyleWindow.dir/DarkStyle.cpp.o: ../include/DarkStyleWindow/DarkStyle.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robot/robot_ws/BulletRobotSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object include/DarkStyleWindow/CMakeFiles/DarkStyleWindow.dir/DarkStyle.cpp.o"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DarkStyleWindow.dir/DarkStyle.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/DarkStyle.cpp
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DarkStyleWindow.dir/DarkStyle.cpp.o -c /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/DarkStyle.cpp
 
 include/DarkStyleWindow/CMakeFiles/DarkStyleWindow.dir/DarkStyle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DarkStyleWindow.dir/DarkStyle.cpp.i"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/DarkStyle.cpp > CMakeFiles/DarkStyleWindow.dir/DarkStyle.cpp.i
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/DarkStyle.cpp > CMakeFiles/DarkStyleWindow.dir/DarkStyle.cpp.i
 
 include/DarkStyleWindow/CMakeFiles/DarkStyleWindow.dir/DarkStyle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DarkStyleWindow.dir/DarkStyle.cpp.s"
-	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/DarkStyle.cpp -o CMakeFiles/DarkStyleWindow.dir/DarkStyle.cpp.s
+	cd /home/robot/robot_ws/BulletRobotSimulator/build/include/DarkStyleWindow && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robot/robot_ws/BulletRobotSimulator/include/DarkStyleWindow/DarkStyle.cpp -o CMakeFiles/DarkStyleWindow.dir/DarkStyle.cpp.s
 
 # Object files for target DarkStyleWindow
 DarkStyleWindow_OBJECTS = \
