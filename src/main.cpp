@@ -19,15 +19,25 @@ Vector3d eef_moments;
 unsigned int cycle_ns = 1000000; /* 1 ms */
 double gt=0;
 std::shared_ptr<spdlog::logger> my_logger;
-
-void init_logger() {
+ JVec q0 = JVec(0,0,0,1.5708,0,1.5708,0);
+ 
+void init_logger(const char* urdf_path) {
     try {
-        if (std::remove("logs/basic-log.txt") == 0) {
-            spdlog::info("Existing log file 'logs/basic-log.txt' removed.");
+        std::string log_file_name = "logs/";
+        log_file_name += urdf_path;  // urdf_path를 log 파일 이름에 추가
+        log_file_name += "-log.txt"; // 확장자 추가
+
+        // 기존 로그 파일 제거 시도
+        if (std::remove(log_file_name.c_str()) == 0) {
+            spdlog::info("Existing log file '{}' removed.", log_file_name);
         } else {
-            spdlog::warn("Could not remove 'logs/basic-log.txt'. It may not exist or be in use.");
+            spdlog::warn("Could not remove '{}'. It may not exist or be in use.", log_file_name);
         }
-        my_logger = spdlog::basic_logger_mt("basic_logger", "logs/basic-log.txt");
+
+        // 로거 설정
+        my_logger = spdlog::basic_logger_mt("basic_logger", log_file_name);
+        my_logger->set_pattern("%M:%S.%e,%v");
+
         spdlog::set_default_logger(my_logger);  // Default logger로 설정
         spdlog::flush_every(std::chrono::seconds(3));  // 자동 flush 설정
     }
@@ -35,7 +45,6 @@ void init_logger() {
         std::cout << "Log init failed: " << ex.what() << std::endl;
     }
 }
-
 
 void signal_handler(int signum)
 {
@@ -57,6 +66,7 @@ void signal_handler(int signum)
 
     
 }
+#include <random>
 #define CYCLE_NS 1000000   // 1ms
 void *physics_run(void *param) {
     (void)param; // 파라미터를 사용하지 않는 경우
@@ -75,34 +85,141 @@ void *physics_run(void *param) {
 
     std::vector<JVec> way_points;
     std::vector<double> delays;
-    
-    way_points.push_back(JVec(0,0,0,0,0,0,0));
-    way_points.push_back(JVec(0,0,0,1.5708,0,1.5708,0));
-    way_points.push_back(JVec(1.0,1.0,1.0,1.0,1.0,1.0,1.0));
-    way_points.push_back(JVec(0,0,0,0.0,0,0.0,0));
-    way_points.push_back(JVec(1.5708,0,0,0,0,0,0));
-    way_points.push_back(JVec(0,0,0,0,0,0,0));
-    way_points.push_back(JVec(-1.5708,0,0,-1.5708,0,0,0));
-    way_points.push_back(JVec(-1.5708,0,0,0,0,0,0));
-    way_points.push_back(JVec(0,0,0,1.5708,0,1.5708,0));
-    way_points.push_back(JVec(0,0,0,0,0,0,0));
 
-    delays.push_back(1.0);
-    delays.push_back(1.0);
-    delays.push_back(1.0);
-    delays.push_back(1.0);
-    delays.push_back(1.0);
-    delays.push_back(1.0);
-    delays.push_back(1.0);
-    delays.push_back(1.0);
+    JVec RandJVec1=JVec::Zero();
+    JVec RandJVec2=JVec::Zero();
+    JVec RandJVec3=JVec::Zero();
+    JVec RandJVec4=JVec::Zero();
+    JVec RandJVec5=JVec::Zero();
+    JVec RandJVec6=JVec::Zero();
+    double min_range = -1.5708;
+    double max_range = 1.5708;    
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_real_distribution<> dis(min_range, max_range);
+
+    for (int i = 0; i < RandJVec1.size(); ++i) {
+        RandJVec1[i] = dis(gen);
+        RandJVec2[i] = dis(gen);
+        RandJVec3[i] = dis(gen);
+        RandJVec4[i] = dis(gen);
+        RandJVec5[i] = dis(gen);
+    }
+
+
+    way_points.push_back(q0);
+    way_points.push_back(JVec(1.5708,1.5708,0,0,0,0,0));
+    way_points.push_back(JVec(-1.5708,1.5708,0,0,0,0,0));
+    way_points.push_back(JVec(-1.5708,-1.5708,0,0,0,0,0));
+    way_points.push_back(JVec(1.5708,-1.5708,1.5708,0,0,0,0));
+    way_points.push_back(JVec(1.5708,1.5708,1.5708,0,0,0,0));
+    way_points.push_back(JVec(-1.5708,-1.5708,-1.5708,1.5708,0,0,0));
+    way_points.push_back(JVec(-1.5708,1.5708,-1.5708,1.5708,0,0,0));
+    way_points.push_back(JVec(0,0,0,1.5708,0,1.5708,0));
+    way_points.push_back(JVec(0,0,0,-1.5708,0,-1.5708,0));
+    way_points.push_back(RandJVec1);
+    way_points.push_back(RandJVec2);
+    way_points.push_back(RandJVec3);
+    way_points.push_back(RandJVec4);
+    way_points.push_back(RandJVec5);
+    way_points.push_back(RandJVec6);
     
+
+    for(int i =0;i<15;i++){
+        delays.push_back(10.0);
+    }
+        
+
+    way_points.push_back(q0);
+    way_points.push_back(JVec(1.5708,1.5708,0,0,0,0,0));
+    way_points.push_back(JVec(-1.5708,1.5708,0,0,0,0,0));
+    way_points.push_back(JVec(-1.5708,-1.5708,0,0,0,0,0));
+    way_points.push_back(JVec(1.5708,-1.5708,1.5708,0,0,0,0));
+    way_points.push_back(JVec(1.5708,1.5708,1.5708,0,0,0,0));
+    way_points.push_back(JVec(-1.5708,-1.5708,-1.5708,1.5708,0,0,0));
+    way_points.push_back(JVec(-1.5708,1.5708,-1.5708,1.5708,0,0,0));
+    way_points.push_back(JVec(0,0,0,1.5708,0,1.5708,0));
+    way_points.push_back(JVec(0,0,0,-1.5708,0,-1.5708,0));
+    way_points.push_back(RandJVec1);
+    way_points.push_back(RandJVec2);
+    way_points.push_back(RandJVec3);
+    way_points.push_back(RandJVec4);
+    way_points.push_back(RandJVec5);
+    way_points.push_back(RandJVec6);
+    
+
+    for(int i =0;i<15;i++){
+        delays.push_back(5.0);
+    }
+        
+
+
+    way_points.push_back(q0);
+    way_points.push_back(JVec(1.5708,1.5708,0,0,0,0,0));
+    way_points.push_back(JVec(-1.5708,1.5708,0,0,0,0,0));
+    way_points.push_back(JVec(-1.5708,-1.5708,0,0,0,0,0));
+    way_points.push_back(JVec(1.5708,-1.5708,1.5708,0,0,0,0));
+    way_points.push_back(JVec(1.5708,1.5708,1.5708,0,0,0,0));
+    way_points.push_back(JVec(-1.5708,-1.5708,-1.5708,1.5708,0,0,0));
+    way_points.push_back(JVec(-1.5708,1.5708,-1.5708,1.5708,0,0,0));
+    way_points.push_back(JVec(0,0,0,1.5708,0,1.5708,0));
+    way_points.push_back(JVec(0,0,0,-1.5708,0,-1.5708,0));
+    way_points.push_back(RandJVec1);
+    way_points.push_back(RandJVec2);
+    way_points.push_back(RandJVec3);
+    way_points.push_back(RandJVec4);
+    way_points.push_back(RandJVec5);
+    way_points.push_back(RandJVec6);
+    
+
+
+
+    for(int i =0;i<15;i++){
+        delays.push_back(3.0);
+    }
+        
+
+
+    std::vector<SE3> task_way_points;
+    std::vector<double> task_delays;
+    SE3 X0 = FKinBody(control->M,control->Blist,q0);
+    SE3 XT = X0*MatrixExp6(VecTose3(Vector6d(-0.5,0.0,0.0,0.0,0.0,0.0)));
+
+    task_way_points.push_back(X0);
+    task_way_points.push_back(X0*MatrixExp6(VecTose3(Vector6d(-0.5,0.0,0.0,0.0,0.0,0.0))));
+    task_way_points.push_back(X0*MatrixExp6(VecTose3(Vector6d(-0.0,0.0,0.0,0.5,0.0,0.0))));
+    task_way_points.push_back(X0*MatrixExp6(VecTose3(Vector6d(-0.0,0.0,0.5,-0.5,0.0,0.0))));
+    task_way_points.push_back(X0*MatrixExp6(VecTose3(Vector6d(-0.0,0.0,0.0,0.5,0.5,0.0))));
+    task_way_points.push_back(X0*MatrixExp6(VecTose3(Vector6d(-0.0,0.0,0.0,0.5,-0.5,0.0))));
+    task_way_points.push_back(X0*MatrixExp6(VecTose3(Vector6d(-0.0,0.0,0.5,0.5,-0.5,0.5))));
+    task_way_points.push_back(X0*MatrixExp6(VecTose3(Vector6d(-0.0,0.0,0.0,0.5,-0.5,-0.5))));
+    task_delays.push_back(5.0);
+    task_delays.push_back(5.0);
+    task_delays.push_back(5.0);
+    task_delays.push_back(5.0);
+    task_delays.push_back(5.0);
+    task_delays.push_back(5.0);
+    task_delays.push_back(5.0);
+
     JVec eint = JVec::Zero();
 
     JVec q_des=JVec::Zero();
     JVec q_dot_des=JVec::Zero();
     JVec q_ddot_des=JVec::Zero();
+    Vector6d Task_eint = Vector6d::Zero();
 
-    while (1) {
+
+    Vector6d V0 = Vector6d::Zero();
+    Vector6d VT = Vector6d::Zero();
+    Vector6d V0_dot = Vector6d::Zero();
+    Vector6d VT_dot = Vector6d::Zero();
+    SE3 T_des=X0;
+    Vector6d V_des = Vector6d::Zero();
+    Vector6d V_des_dot = Vector6d::Zero();
+
+   
+
+    while (run) {
         // 다음 주기 시간 계산
         next_period.tv_nsec += CYCLE_NS;
         if (next_period.tv_nsec >= 1000000000) {
@@ -114,10 +231,13 @@ void *physics_run(void *param) {
         q = robot->get_q();
 	    q_dot = robot->get_q_dot();
         control->WayPointJointTrajectory(way_points, delays, gt,q_des,q_dot_des,q_ddot_des);        
-
-	    //JVec torques = lr::GravityForces(q,control->g,control->Mlist, control->Glist, control->Slist);
-    
-        JVec torques =control->HinfControl(q,q_dot,q_des,q_dot_des,q_ddot_des,eint);
+        //lr::LieScrewTrajectory( X0,XT,V0,VT,V0_dot,VT_dot,5,gt,T_des,V_des,V_des_dot);
+        //control->WayPointTaskTrajectory(task_way_points, task_delays, gt, T_des, V_des, V_des_dot);
+	    
+        JVec q_ddot = JVec::Zero();
+        //JVec torques =control->TaskHinfControl(  q, q_dot, q_ddot,  T_des, V_des, V_des_dot, Task_eint);
+        JVec torques =control->HinfControl(q,q_dot,q_des,q_dot_des,q_ddot_des,eint,10);
+        //JVec torques = lr::GravityForces(q,control->g,control->Mlist, control->Glist, control->Slist,5.0);
         JVec e = q_des-q;
         eint +=e*dt;
 
@@ -127,7 +247,7 @@ void *physics_run(void *param) {
         //robot_info.act.q = JVec(sin(gt*M_PI*1),sin(gt*M_PI*2),sin(gt*M_PI*4),sin(gt*M_PI*8),sin(gt*M_PI*16),sin(gt*M_PI*32),sin(gt*M_PI*64)) ;
 //        spdlog::info("Torques: {}", torques.transpose().format(Eigen::IOFormat(Eigen::StreamPrecision, Eigen::DontAlignCols, ", ", ", ", "", "", "[", "]")));
         spdlog::info("{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f}",torques(0),torques(1),torques(2),torques(3),torques(4),torques(5),torques(6));
-                spdlog::info("{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f}",torques(0),torques(1),torques(2),torques(3),torques(4),torques(5),torques(6));
+        //spdlog::info("{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f} ,{:03.3f}",torques(0),torques(1),torques(2),torques(3),torques(4),torques(5),torques(6));
 
 
         static int cnt_=0;
@@ -136,8 +256,6 @@ void *physics_run(void *param) {
             duration = std::chrono::duration_cast<std::chrono::microseconds>(nowClock-prevClock);        
 
             //spdlog::info("gt : {:03.3f} , elapsed time : {:03.6f}[s] \n",gt,duration.count()/1e6);
-
-
             printf("gt : %.3f, elapsed time : %.6f [s] \n",gt,duration.count()/1e6);
             //std::cout<<e.transpose()<<std::endl;
             cnt_ = 0;
@@ -149,9 +267,12 @@ void *physics_run(void *param) {
 	    robot_info.act.q_dot = q_dot;
 	    robot_info.act.tau = torques;       
         // 다음 주기까지 대기
+        if(gt>10*15+5*15+3*15){ 
+            run=0;
+            break;
+        }
         clock_nanosleep(CLOCK_MONOTONIC, TIMER_ABSTIME, &next_period, NULL);
     }
-
     return NULL;
 }
 
@@ -214,13 +335,14 @@ int main(int argc, char* argv[]){
     //int planeId = sim->loadURDF("/opt/RobotInfo/urdf/plane/plane.urdf");
     sim->setRealTimeSimulation(false);
     robot = new Robot(sim,robotId);	
+    robot->reset_q(q0);
     robot_info.act.F_ext=Vector6d::Zero();
     control = new LR_Control();
     control->LRSetup(urdfFilePath);
 
-    init_logger();  // 로거 초기화
 
-    std::thread qtThread(runQtApplication, argc, argv);
+    init_logger(urdfFilePath);
+    //std::thread qtThread(runQtApplication, argc, argv);
 
     //pthread setup
     pthread_t physics_thread;
@@ -235,11 +357,15 @@ int main(int argc, char* argv[]){
 
 
 
-    pause();
-    qtThread.join();	
+    while(run){
+        sleep(1);
+    }
+    //qtThread.join();	
     pthread_join(physics_thread, NULL);
 
 
 	signal_handler(0);
     return 0;
 }
+
+

@@ -37,6 +37,9 @@ public:
     MatrixNd Kv;
     MatrixNd Ki;
 
+    Matrix6d Task_Kp;
+    Matrix6d Task_Kv;
+
     MatrixNd Hinf_Kp;
     MatrixNd Hinf_Kv;
     MatrixNd Hinf_Ki;
@@ -44,7 +47,10 @@ public:
 
     void LRSetup(const char* urdf_path);
     JVec HinfControl( JVec q,JVec dq,JVec q_des,JVec dq_des,JVec ddq_des,JVec eint);
+    JVec HinfControl( JVec q,JVec dq,JVec q_des,JVec dq_des,JVec ddq_des,JVec eint,double eef_mass);
+    JVec TaskHinfControl( JVec q,JVec q_dot,JVec q_ddot, SE3 T_des,Vector6d V_des,Vector6d V_dot_des,Vector6d eint);
     void WayPointJointTrajectory(std::vector<JVec> way_points, std::vector<double> delays, double now, JVec& q_des,JVec& q_dot_des,JVec& q_ddot_des);
+    void WayPointTaskTrajectory(std::vector<SE3> way_points, std::vector<double> delays, double now, SE3& T_des,Vector6d& V_des,Vector6d& V_dot_des);
 };
 
 #endif // LR_CONTROL_H

@@ -820,7 +820,7 @@ Matrix6d ddlog6(const Vector6d& lambda, const Vector6d& lambda_dot) {
 
     return ddlog;
 }
-void LieScrewTrajectory(const SE3 X0,const SE3 XT,const Vector6d V0,const Vector6d VT,const Vector6d dV0,const Vector6d dVT,double Tf,int N,vector<SE3>&Xd_list,vector<Vector6d>&Vd_list,vector<Vector6d>&dVd_list){
+void LieScrewTrajectory(const SE3 X0,const SE3 XT,const Vector6d V0,const Vector6d VT,const Vector6d dV0,const Vector6d dVT,double Tf,double t,SE3& T_des,Vector6d& V_des,Vector6d& V_des_dot){
 	Vector6d lambda_0,lambda_T,dlambda_0,dlambda_T,ddlambda_0,ddlambda_T,lambda_t,dlambda_t,ddlambda_t;
 	lambda_0 = Vector6d::Zero();
 	lambda_T = se3ToVec(MatrixLog6(TransInv(X0)*XT));
@@ -828,26 +828,49 @@ void LieScrewTrajectory(const SE3 X0,const SE3 XT,const Vector6d V0,const Vector
 	dlambda_T = dlog6(-lambda_T)*VT;
 	ddlambda_0 = dV0;
 	ddlambda_T = dlog6(-lambda_T)*dVT +ddlog6(-lambda_T,-dlambda_T)*VT;
-	double timegap = Tf /(N/1.0 - 1.0);
-	for (int i = 0;i<N;i++){
-		lambda_t=dlambda_t=ddlambda_t= Vector6d::Zero();
-		double t= timegap*(i-1);
-		for(int j = 0;j<6;j++){
-			Vector3d ret = QuinticTimeScalingKinematics(lambda_0(j),lambda_T(j),dlambda_0(j),dlambda_T(j),ddlambda_0(j),ddlambda_T(j),Tf,t) ;
-			lambda_t(j) = ret(0);
-			dlambda_t(j) = ret(1);
-			ddlambda_t(j) = ret(2);
-		}
-		Vector6d V = dexp6(-lambda_t)*dlambda_t;
-		Vector6d dV = dexp6(-lambda_t)*ddlambda_t+ddexp6(-lambda_t,-dlambda_t)*dlambda_t;
-		SE3 T = X0*MatrixExp6(VecTose3(lambda_t));
-		Xd_list.push_back(T);
-		Vd_list.push_back(V);
-		dVd_list.push_back(dV);
+	lambda_t=dlambda_t=ddlambda_t= Vector6d::Zero();
+	for(int j = 0;j<6;j++){
+		Vector3d ret = QuinticTimeScalingKinematics(lambda_0(j),lambda_T(j),dlambda_0(j),dlambda_T(j),ddlambda_0(j),ddlambda_T(j),Tf,t) ;
+		lambda_t(j) = ret(0);
+		dlambda_t(j) = ret(1);
+		ddlambda_t(j) = ret(2);
 	}
-	
-	
+	V_des = dexp6(-lambda_t)*dlambda_t;
+	V_des_dot = dexp6(-lambda_t)*ddlambda_t+ddexp6(-lambda_t,-dlambda_t)*dlambda_t;
+	T_des = X0*MatrixExp6(VecTose3(lambda_t));
+	if (t>=Tf){
+		V_des = VT;
+		V_des_dot = dVT;
+		T_des = XT;
+
+	}
 }	
+// void LieScrewTrajectory(const SE3 X0,const SE3 XT,const Vector6d V0,const Vector6d VT,const Vector6d dV0,const Vector6d dVT,double Tf,int N,vector<SE3>&Xd_list,vector<Vector6d>&Vd_list,vector<Vector6d>&dVd_list){
+// 	Vector6d lambda_0,lambda_T,dlambda_0,dlambda_T,ddlambda_0,ddlambda_T,lambda_t,dlambda_t,ddlambda_t;
+// 	lambda_0 = Vector6d::Zero();
+// 	lambda_T = se3ToVec(MatrixLog6(TransInv(X0)*XT));
+// 	dlambda_0 = V0;
+// 	dlambda_T = dlog6(-lambda_T)*VT;
+// 	ddlambda_0 = dV0;
+// 	ddlambda_T = dlog6(-lambda_T)*dVT +ddlog6(-lambda_T,-dlambda_T)*VT;
+// 	double timegap = Tf /(N/1.0 - 1.0);
+// 	for (int i = 0;i<N;i++){
+// 		lambda_t=dlambda_t=ddlambda_t= Vector6d::Zero();
+// 		double t= timegap*(i-1);
+// 		for(int j = 0;j<6;j++){
+// 			Vector3d ret = QuinticTimeScalingKinematics(lambda_0(j),lambda_T(j),dlambda_0(j),dlambda_T(j),ddlambda_0(j),ddlambda_T(j),Tf,t) ;
+// 			lambda_t(j) = ret(0);
+// 			dlambda_t(j) = ret(1);
+// 			ddlambda_t(j) = ret(2);
+// 		}
+// 		Vector6d V = dexp6(-lambda_t)*dlambda_t;
+// 		Vector6d dV = dexp6(-lambda_t)*ddlambda_t+ddexp6(-lambda_t,-dlambda_t)*dlambda_t;
+// 		SE3 T = X0*MatrixExp6(VecTose3(lambda_t));
+// 		Xd_list.push_back(T);
+// 		Vd_list.push_back(V);
+// 		dVd_list.push_back(dV);
+// 	}
+// }	
 
 void JointTrajectory(const JVec q0, const JVec qT, double Tf, double t , int method , JVec& q_des, JVec& q_dot_des, JVec& q_ddot_des) {
 	if(t>Tf)t = Tf;
