@@ -22,6 +22,7 @@ endif()
 SET(RobotSimulator_NoGUI_SRCS
   src/main.cpp
 )
+set(JOINTNUM 7 CACHE STRING "Number of joints")
 
 # QT
 

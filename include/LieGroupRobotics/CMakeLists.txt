@@ -3,7 +3,6 @@ project(LR LANGUAGES CXX)
 
 set(CMAKE_DEBUG_POSTFIX "d")
 set(BUILD_SHARED_LIBS FALSE)
-set(JOINTNUM 7 CACHE STRING "Number of joints")
 file(REMOVE ${PROJECT_SOURCE_DIR}/type.h)
 configure_file(${PROJECT_SOURCE_DIR}/type_template.h.in ${PROJECT_SOURCE_DIR}/type.h)
 file(GLOB SOURCE_FILES "*.cpp" "*.c" "*.h")
