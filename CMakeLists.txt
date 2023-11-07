@@ -11,9 +11,7 @@ set(PROJ_INSTALL_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/bin/inc)
 set(PROJ_INSTALL_BIN_DIR ${PROJECT_SOURCE_DIR}/bin)
 set(PROJ_INSTALL_LIB_DIR ${PROJECT_SOURCE_DIR}/lib)
 
-set(CMAKE_DEBUG_POSTFIX "d")
 set(CMAKE_MODULE_PATH  ${CMAKE_CURRENT_SOURCE_DIR}/modules)
-set(BUILD_SHARED_LIBS TRUE)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
@@ -29,6 +27,7 @@ SET(RobotSimulator_NoGUI_SRCS
 
 find_package(Qt5 COMPONENTS Widgets Core Quick REQUIRED)
 find_package(jsoncpp REQUIRED)
+find_package(cxxopts REQUIRED)
 
 
 set(CMAKE_AUTOMOC ON)
@@ -59,6 +58,7 @@ set(COMMON_LIBRARIES
 	Threads::Threads
 	rt
 	jsoncpp
+	cxxopts::cxxopts
 )
 set(QT_LIBRARIES
 	sub::QtWidgets
@@ -71,7 +71,6 @@ set(QT_LIBRARIES
 	qcustomplot
 )
 
-SET(QT_SRCS src/mainwindow.cpp src/mainwindow.h src/mainwindow.ui)
 #bullet3
 set(BULLET_PHYSICS_SOURCE_DIR  "/opt/bullet3")
 set(BULLET_PHYSICS_LIB  "/opt/bullet3/build_cmake/local_install/lib")
@@ -111,8 +110,13 @@ INCLUDE_DIRECTORIES(
 		${QTWIDGET_HEADERS_DIR}
 		${DARKSTYLE_HEADERS_DIR}		
   )
-  
-ADD_EXECUTABLE(${PROJECT_NAME}  ${RobotSimulator_NoGUI_SRCS} ${QT_SRCS})
+
+SET(PHYSICS_SRCS src/physics/physics_run.cpp )
+SET(CONTROL_SRCS src/control/control_run.cpp )
+SET(PRINT_SRCS src/print/print_run.cpp )
+SET(QT_SRCS src/qt/mainwindow.cpp src/qt/mainwindow.h src/qt/mainwindow.ui src/qt/qt_run.cpp src/qt/qt_run.h)
+
+ADD_EXECUTABLE(${PROJECT_NAME}  ${PHYSICS_SRCS} ${CONTROL_SRCS} ${PRINT_SRCS} ${RobotSimulator_NoGUI_SRCS} ${QT_SRCS})
 
 target_link_libraries(${PROJECT_NAME} ${COMMON_LIBRARIES})
 target_link_libraries(${PROJECT_NAME} ${QT_LIBRARIES})

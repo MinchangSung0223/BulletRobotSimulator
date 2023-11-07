@@ -264,6 +264,11 @@ void LR_Control::LRSetup(const char* urdf_path){
         printf("ERROR.\n");
     }
 	bool ret = ReadLRData(LR_full_path,rootr);
+    if(ret == 1)
+        printf("LR_info.json has been successfully loaded!\n");
+    else
+        printf("Failed to load LR_info.json!\n");
+
 
     ScrewList Blist,Slist;
 	for(int i =0;i<6 ; i++){
@@ -273,10 +278,10 @@ void LR_Control::LRSetup(const char* urdf_path){
 		}
 	}	
 
-    cout<<"=====================Slist====================="<<endl;
-    cout<<this->Slist<<endl;
-    cout<<"=====================Blist====================="<<endl;
-    cout<<this->Blist<<endl;
+    // cout<<"=====================Slist====================="<<endl;
+    // cout<<this->Slist<<endl;
+    // cout<<"=====================Blist====================="<<endl;
+    // cout<<this->Blist<<endl;
 	for(int i = 0;i< rootr["Mlist"].size(); i++){
 		MatrixXd M = MatrixXd::Identity(4,4);
 		for(int j = 0;j< rootr["Mlist"][0].size(); j++){
@@ -284,8 +289,8 @@ void LR_Control::LRSetup(const char* urdf_path){
 				M(j,k) = rootr["Mlist"][i][j][k].asDouble();
 			}
 		}
-        cout<<"=================M"<<i<<"============================"<<endl;
-        cout<<M<<endl;
+        // cout<<"=================M"<<i<<"============================"<<endl;
+        // cout<<M<<endl;
 
 		char str[50];		
 		this->Mlist.push_back(M);
@@ -297,8 +302,8 @@ void LR_Control::LRSetup(const char* urdf_path){
 				G(j,k) = rootr["Glist"][i][j][k].asDouble();
 			}
 		}
-        cout<<"=================G"<<i<<"============================"<<endl;
-        cout<<G<<endl;
+        // cout<<"=================G"<<i<<"============================"<<endl;
+        // cout<<G<<endl;
 
        // G_.block<3,3>(0,0) = G.block<3,3>(3,3);
         //G_.block<3,3>(3,3) = G.block<3,3>(0,0);
@@ -309,8 +314,8 @@ void LR_Control::LRSetup(const char* urdf_path){
 			this->M(i,j) = rootr["M"][i][j].asDouble();
 		}
 	}	
-    cout<<"=================M================="<<endl;
-    cout<<this->M<<endl;    
-	cout<<"END MRSetup"<<endl;
+    // cout<<"=================M================="<<endl;
+    // cout<<this->M<<endl;    
+	// cout<<"END MRSetup"<<endl;
 
 }

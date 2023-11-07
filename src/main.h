@@ -33,42 +33,22 @@
 #include <time.h>
 #include <unistd.h>
 
-//QT
-#include <QApplication>
-#include <QSplitter>
-#include <QTreeView>
-#include <QListView>
-#include <QTableView>
-#include <QStandardItemModel>
-#include <QScreen>
-
-#include "DarkStyle.h"
-#include "framelesswindow.h"
-#include "mainwindow.h"
-#include <iostream>
-
-#include <QApplication>
-#include <QResource>
-#include <QTextCodec>
 
 
-//Bullet
-#include "b3RobotSimulatorClientAPI.h"
-#include "../Utils/b3Clock.h"
-#include "LinearMath/btVector3.h"
-#include "btBulletDynamicsCommon.h"
-//Control
-#include "liegroup_robotics.h"
-#include "Robot.h"
-#include "LR_Control.h"
 
-#include "spdlog/spdlog.h"
-#include "spdlog/sinks/basic_file_sink.h"
+
+#include "physics/physics_run.h"
+#include "control/control_run.h"
+#include "qt/qt_run.h"
+#include "print/print_run.h"
+
+#define CYCLE_NS 1000000
 
 #define NSEC_PER_SEC 			1000000000
 
 static int run = 1;
 #define ASSERT_EQ(a, b) assert((a) == (b));
+
 
 typedef struct STATE{
 	JVec q;
@@ -107,8 +87,15 @@ typedef struct ROBOT_INFO{
 }ROBOT_INFO;
 extern ROBOT_INFO robot_info;
 extern std::mutex g_pages_mutex;
-extern unsigned int cycle_ns;
 extern double gt;
-
+extern b3RobotSimulatorClientAPI* sim;
+extern const char* urdfFilePath;
+extern double CONTROL_RATE;
+extern btScalar fixedTimeStep;
+extern Robot *robot;
+extern float eef_mass;
+extern double gt;
+extern bool with_gui;
+extern bool use_log;
 #endif  // MAIN_H
 
