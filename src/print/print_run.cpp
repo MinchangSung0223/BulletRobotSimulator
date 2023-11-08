@@ -24,6 +24,9 @@ void init_logger(const char* urdf_path) {
         std::cout << "Log init failed: " << ex.what() << std::endl;
     }
 }
+void print_JVec(JVec val,char *str){
+    spdlog::info("{:s} : {:03.8f}\t{:03.8f}\t{:03.8f}\t{:03.8f}\t{:03.8f}\t{:03.8f}\t{:03.8f}",str,val(0),val(1),val(2),val(3),val(4),val(5),val(6));
+}
 void* print_run(void* param) {
     struct timespec next_period;
     clock_gettime(CLOCK_MONOTONIC, &next_period);
@@ -39,7 +42,14 @@ void* print_run(void* param) {
             next_period.tv_sec++;
         }
         //
-            spdlog::info("gt : {:03.3f} \n",gt);
+            system("clear");
+            spdlog::info("gt : {:03.3f}",gt);
+            
+            print_JVec(robot_info.des.q,"q_des");
+            print_JVec(robot_info.act.q,"q");
+            print_JVec(robot_info.act.e,"e");
+            print_JVec(robot_info.des.tau,"tau");
+            
         //
         clock_nanosleep(CLOCK_MONOTONIC, TIMER_ABSTIME, &next_period, NULL);
     }

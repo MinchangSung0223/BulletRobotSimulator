@@ -58,9 +58,9 @@ LR_Control::LR_Control() {
     this->Task_Kp = Matrix6d::Identity()*2000;
     this->Task_Kv = Matrix6d::Identity()*200;
     JVec invL2sqr=JVec::Zero();
-    invL2sqr<<80.0,80.0,80.0,80.0,80.0,80.0,8.0;
+    invL2sqr<<80.0,160.0,160.0,160.0,80.0,80.0,8.0;
     JVec K=JVec::Zero();
-    K<<10,10,10,10,10,10,1;
+    K<<80,300,10,200,10,50,1;
     for (int i=0; i<JOINTNUM; ++i)
     {
         switch(i)

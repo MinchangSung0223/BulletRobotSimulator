@@ -11,7 +11,7 @@ const char* urdfFilePath =NULL;
 float eef_mass = 0;
 bool with_gui = false;
 bool use_log;
-
+std::mutex mtx; 
 
 
 
@@ -114,16 +114,6 @@ int main(int argc, char* argv[]){
 
 
 
-    //pthread thread
-    pthread_t physics_thread;
-    pthread_attr_t physics_attr;
-    struct sched_param physics_param;
-    pthread_attr_init(&physics_attr);
-    pthread_attr_setschedpolicy(&physics_attr, SCHED_FIFO );
-    physics_param.sched_priority = sched_get_priority_max(SCHED_FIFO )-1;
-    pthread_attr_setschedparam(&physics_attr, &physics_param);
-    pthread_create(&physics_thread, &physics_attr, physics_run, NULL);
-    //set_thread_affinity(physics_thread, 0); // 0번 코어에 할당
 
     //control thread
     pthread_t control_thread;
@@ -137,6 +127,16 @@ int main(int argc, char* argv[]){
         pthread_create(&control_thread, &control_attr, control_run, NULL);
         //set_thread_affinity(control_thread, 1); // 1번 코어에 할당
     }
+    //pthread thread
+    pthread_t physics_thread;
+    pthread_attr_t physics_attr;
+    struct sched_param physics_param;
+    pthread_attr_init(&physics_attr);
+    pthread_attr_setschedpolicy(&physics_attr, SCHED_FIFO );
+    physics_param.sched_priority = sched_get_priority_max(SCHED_FIFO )-1;
+    pthread_attr_setschedparam(&physics_attr, &physics_param);
+    pthread_create(&physics_thread, &physics_attr, physics_run, NULL);
+    //set_thread_affinity(physics_thread, 0); // 0번 코어에 할당
 
     //qt thread
     pthread_t print_thread;

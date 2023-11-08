@@ -173,7 +173,6 @@ void Robot::draw_eef_T(float line_length,float line_width){
 	line_args.m_colorRGB[1]=0;
 	line_args.m_colorRGB[2]=1;
 	this->draw_id_z=sim->addUserDebugLine(fromXYZ,btVector3(0,0,line_length),line_args);
-
 }
 // Destructor
 Robot::~Robot() {

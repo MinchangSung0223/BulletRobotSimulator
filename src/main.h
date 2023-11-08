@@ -49,13 +49,14 @@
 static int run = 1;
 #define ASSERT_EQ(a, b) assert((a) == (b));
 
-
 typedef struct STATE{
 	JVec q;
 	JVec q_dot;
 	JVec q_ddot;
 	JVec tau;
 	JVec tau_ext;
+	JVec e;
+	JVec eint;
 	JVec G;
 
 	Vector6d x;                           //Task space
@@ -79,6 +80,7 @@ typedef struct ROBOT_INFO{
 	JVec qdot_target;
 	JVec qddot_target;
 	JVec traj_time;
+	
 
 	STATE act;
 	STATE des;
@@ -97,5 +99,9 @@ extern float eef_mass;
 extern double gt;
 extern bool with_gui;
 extern bool use_log;
+extern std::mutex mtx; // 전역 뮤텍스
+extern JVec q0;
+
+
 #endif  // MAIN_H
 
