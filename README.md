@@ -9,6 +9,17 @@
   cd build_cmake
   sudo make install
   sudo  ln -s $BULLET_HOME /opt/bullet3
+  sudo cp /usr/local/lib/libBullet* /usr/lib/x86_64-linux-gnu
+```
+# cxxopts install
+```bash
+git clone https://github.com/jarro2783/cxxopts.git
+cd cxxopts
+mkdir build
+cd build
+cmake ..
+make -j$(nproc)
+sudo make install
 ```
 
 # qt5 install
@@ -31,24 +42,9 @@ mkdir build
 cd build
 cmake ..
 make j$(nproc)
-./robotSim
+./robotSim --urdf ../urdf/231103_CEAEASR_min/urdf/231103_CEAEASR_min.urdf --gui --control --qt
 ```
 
 
-# 문제점
-make install할 경우
-```
-/usr/local/lib
-``
-위의 폴더에 install됨, 그런데 ros2나 ros가 설치되어 있는경우
 
-```
-/usr/lib/x86_64-linux-gnu
-```
-위 폴더에 libBullet*.so.2.88 들이 설치되어 있음
-
-따라서 충돌을 막기 위해 다음과 같이 설정
-```
-sudo cp  /usr/local/lib/libBullet* /usr/lib/x86_64-linux-gnu
-```
 

@@ -114,7 +114,6 @@ int main(int argc, char* argv[]){
 
 
 
-
     //control thread
     pthread_t control_thread;
     pthread_attr_t control_attr;

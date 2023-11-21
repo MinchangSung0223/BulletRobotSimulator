@@ -11,7 +11,7 @@ namespace lr {
 
     Matrix6d ad(const Vector6d& V) ;
     Matrix6d Ad(const SE3& T);
-	Matrix6d AdInv(const SE3& T);    
+	  Matrix6d AdInv(const SE3& T);    
     SE3 TransInv(const SE3& T) ;
     SO3 TransToR(const SE3& T);
     Vector3d TransToP(const SE3& T);

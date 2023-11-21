@@ -2,7 +2,7 @@
 Robot *robot;
 //JVec q0 = JVec(0,0,0,1.5708,0,1.5708,0);
 JVec kMaxTorques=JVec::Ones()*1000;
-JVec  q0= JVec(0,0,0,1.5708,0,1.5708,0);
+JVec  q0= JVec(0,0,0,0,0,0,0);
 double gt=0;
 void draw_T(SE3 T,float line_length,float line_width,int& draw_id_x,int& draw_id_y,int& draw_id_z,double life_time){
     // sim->removeUserDebugItem(draw_id_x);
@@ -73,7 +73,7 @@ void* physics_run(void* param) {
     sim->setTimeOut(10);
     
     sim->setTimeStep(fixedTimeStep);
-    sim->setGravity(btVector3(0, 0, -9.8));
+    sim->setGravity(btVector3(0, 0, 0));
     b3RobotSimulatorSetPhysicsEngineParameters args;
     sim->getPhysicsEngineParameters(args);
     int robotId = sim->loadURDF(urdfFilePath);
