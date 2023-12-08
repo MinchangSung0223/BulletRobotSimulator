@@ -25,6 +25,8 @@ sudo make install
 # qt5 install
 ```bash
 sudo apt-get install qt5-default
+22.04 : sudo apt install qtbase5-dev qt5-qmake
+
 sudo apt install qtdeclarative5-dev
 ```
 # library install(jsoncpp, eigen3, spdlog)
